@@ -38,12 +38,12 @@ const Navbar: React.FC = () => {
       >
         <div className="max-w-7xl mx-auto px-0 sm:px-4 lg:px-4">
           <div className="flex items-center justify-between h-16 md:h-20 pl-4 sm:pl-6 lg:pl-8">
-            <div className="flex items-center mt-4 md:mt-0">
+            <div className="flex items-center md:mt-0">
               <a href="#home" className="flex items-center">
                 <img
                     src="/logo.png"
                     alt="MolKet Logo"
-                    className="h-9 w-auto"
+                    className="h-7 w-auto"
                 />
               </a>
             </div>
