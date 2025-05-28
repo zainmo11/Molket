@@ -55,8 +55,8 @@ function App() {
     }, []);
 
     return (
-        <div className="min-h-screen bg-white">
-            {/*<Navbar />*/}
+        <div className="min-h-screen bg-white overflow-x-hidden">
+            <Navbar />
             <Hero />
             <About />
             <Services />
