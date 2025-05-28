@@ -1,4 +1,4 @@
-# MolKet Web Application
+# MolKet Web Portfolio
 
 ![image](https://github.com/user-attachments/assets/8bd4b38c-80a7-4d8c-9533-38a97443cbf9)
 
