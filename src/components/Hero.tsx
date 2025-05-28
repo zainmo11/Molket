@@ -115,26 +115,26 @@ const Hero: React.FC = () => {
           <motion.img
               src="/logo.png"
               alt="MolKet Logo"
-              className="mx-auto h-20 sm:h-24 md:h-32 lg:h-40 mb-6"
-              initial={{ opacity: 0, y: -20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.8 }}
+              className="mx-auto mt-6 sm:mt-0 h-20 sm:h-24 md:h-32 lg:h-40 mb-6"
+              initial={{opacity: 0, y: -20}}
+              animate={{opacity: 1, y: 0}}
+              transition={{duration: 0.8}}
           />
 
           <motion.h1
               className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-6"
-              initial={{ opacity: 0 }}
-              animate={{ opacity: 1 }}
-              transition={{ duration: 0.8, delay: 0.2 }}
+              initial={{opacity: 0}}
+              animate={{opacity: 1}}
+              transition={{duration: 0.8, delay: 0.2}}
           >
             Next-Generation Quantum Solutions
           </motion.h1>
 
           <motion.div
               className="max-w-3xl mx-auto px-2"
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.8, delay: 0.4 }}
+              initial={{opacity: 0, y: 20}}
+              animate={{opacity: 1, y: 0}}
+              transition={{duration: 0.8, delay: 0.4}}
           >
             <p className="text-lg sm:text-xl text-white/90 mb-8">
               MolKet offers management consulting and AI services for:
@@ -143,40 +143,41 @@ const Hero: React.FC = () => {
             <ul className="space-y-3 text-base sm:text-lg text-white/90 mb-8 mx-auto max-w-md">
               <motion.li
                   className="bg-white/10 backdrop-blur-sm rounded-lg px-4 py-2"
-                  initial={{ opacity: 0, x: -20 }}
-                  animate={{ opacity: 1, x: 0 }}
-                  transition={{ duration: 0.5, delay: 0.6 }}
+                  initial={{opacity: 0, x: -20}}
+                  animate={{opacity: 1, x: 0}}
+                  transition={{duration: 0.5, delay: 0.6}}
               >
                 Quantum molecular dynamics
               </motion.li>
               <motion.li
                   className="bg-white/10 backdrop-blur-sm rounded-lg px-4 py-2"
-                  initial={{ opacity: 0, x: -20 }}
-                  animate={{ opacity: 1, x: 0 }}
-                  transition={{ duration: 0.5, delay: 0.7 }}
+                  initial={{opacity: 0, x: -20}}
+                  animate={{opacity: 1, x: 0}}
+                  transition={{duration: 0.5, delay: 0.7}}
               >
                 Cryptography
               </motion.li>
               <motion.li
                   className="bg-white/10 backdrop-blur-sm rounded-lg px-4 py-2"
-                  initial={{ opacity: 0, x: -20 }}
-                  animate={{ opacity: 1, x: 0 }}
-                  transition={{ duration: 0.5, delay: 0.8 }}
+                  initial={{opacity: 0, x: -20}}
+                  animate={{opacity: 1, x: 0}}
+                  transition={{duration: 0.5, delay: 0.8}}
               >
                 Neuromorphic-based computing
               </motion.li>
             </ul>
 
             <p className="text-base sm:text-lg text-white/90 mb-10">
-              Supported by cloud-based hybrid HPC & quantum computing platforms, enabling the development of advanced machine
+              Supported by cloud-based hybrid HPC & quantum computing platforms, enabling the development of advanced
+              machine
               learning algorithms with significant predictive power.
             </p>
 
             <motion.div
                 className="flex flex-col sm:flex-row justify-center items-center space-y-4 sm:space-y-0 sm:space-x-4"
-                initial={{ opacity: 0, y: 20 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.8, delay: 1 }}
+                initial={{opacity: 0, y: 20}}
+                animate={{opacity: 1, y: 0}}
+                transition={{duration: 0.8, delay: 1}}
             >
               <a
                   href="https://1u0ya8k0gol.typeform.com/to/RyIvarq4"

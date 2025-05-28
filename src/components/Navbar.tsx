@@ -38,7 +38,7 @@ const Navbar: React.FC = () => {
       >
         <div className="max-w-7xl mx-auto px-0 sm:px-4 lg:px-4">
           <div className="flex items-center justify-between h-16 md:h-20 pl-4 sm:pl-6 lg:pl-8">
-            <div className="flex items-center mt-4 md:mt-0">
+            <div className="flex items-center md:mt-0">
               <a href="#home" className="flex items-center">
                 <img
                     src="/logo.png"
@@ -109,7 +109,7 @@ const Navbar: React.FC = () => {
                     scrolled ? 'text-white' : 'text-white'
                 } hover:bg-blue-700 hover:text-white focus:outline-none`}
             >
-              {isOpen ? <X className="h-6 w-6"/> : <Menu className="h-6 w-6"/>}
+              {isOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
             </button>
           </div>
 
