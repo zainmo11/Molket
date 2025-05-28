@@ -1,0 +1,87 @@
+import React from 'react';
+import { motion } from 'framer-motion';
+
+const About: React.FC = () => {
+  return (
+      <section id="about" className="py-20 bg-gray-50">
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="max-w-6xl mx-auto">
+            <motion.div
+                className="text-center mb-16"
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.8 }}
+            >
+              <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">About MolKet</h2>
+              <div className="h-1 w-20 bg-blue-600 mx-auto mb-8"></div>
+            </motion.div>
+
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+              <motion.div
+                  initial={{ opacity: 0, x: -50 }}
+                  whileInView={{ opacity: 1, x: 0 }}
+                  viewport={{ once: true }}
+                  transition={{ duration: 0.8 }}
+              >
+                <h3 className="text-2xl font-bold text-gray-900 mb-6">
+                  Fast and accurate molecular design simulations assisted by AI
+                </h3>
+                <div className="h-1 w-16 bg-blue-600 mb-6"></div>
+                <p className="text-gray-700 mb-6">
+                  Chemistry simulations are time consuming and complicated to prepare.
+                  Our goal is to make the design process easier and fast. We use AI to train general Hamiltonians for
+                  chemistry simulations that can be executed efficiently on HPC, quantum computers, and on simulations
+                  of quantum computers.
+                </p>
+                <p className="text-gray-700">
+                  The company also offers consulting services for training AI on datasets
+                  from fields such as chemistry, biology, materials science, and cosmology.
+                  These services are supported by physics-based kernels (e.g.,
+                  quantum-mechanical kernels), enabling the development of advanced machine
+                  learning algorithms with significant predictive power.
+                </p>
+              </motion.div>
+
+              <motion.div
+                  className="rounded-lg overflow-hidden shadow-xl w-full max-w-2xl mx-auto"
+                  initial={{ opacity: 0, x: 50 }}
+                  whileInView={{ opacity: 1, x: 0 }}
+                  viewport={{ once: true }}
+                  transition={{ duration: 0.8, delay: 0.2 }}
+              >
+                <img
+                    src="./deck_general_compact_new.004.jpeg"
+                    alt="MolKet Services"
+                    className="w-full h-auto object-contain"
+                />
+              </motion.div>
+            </div>
+
+            <motion.div
+                className="mt-20"
+                initial={{ opacity: 0, y: 50 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.8 }}
+            >
+              <h3 className="text-2xl font-bold text-gray-900 mb-6 text-center">
+                Highly engineered, standard process for quantum chemistry simulations
+              </h3>
+              <div className="h-1 w-16 bg-blue-600 mx-auto mb-8"></div>
+              <div className="rounded-lg overflow-hidden shadow-xl">
+                <video
+                    className="w-full h-auto"
+                    controls>
+                  <source src="./ezgif.com-gif-to-mp4.mp4" type="video/mp4" />
+                  Your browser does not support the video tag.
+                </video>
+              </div>
+            </motion.div>
+          </div>
+        </div>
+      </section>
+  );
+};
+
+export default About;
