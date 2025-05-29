@@ -105,7 +105,7 @@ const Navbar: React.FC = () => {
               <select
                   onChange={handleLanguageChange}
                   value={i18n.language}
-                  className={`ml-4 px-3 py-2 rounded-md text-sm border ${
+                  className={`ml-4 px-3 py-1 rounded-md text-sm border ${
                       scrolled
                           ? 'bg-gray-800 text-white border-gray-600 hover:border-blue-500 focus:ring-blue-500'
                           : 'bg-transparent text-white border-white hover:border-blue-400'
@@ -122,7 +122,7 @@ const Navbar: React.FC = () => {
               <select
                   onChange={handleLanguageChange}
                   value={i18n.language}
-                  className={`ml-4 px-3 py-2 rounded-md text-sm border ${
+                  className={`ml-4 px-2 py-1 rounded-md text-sm border ${
                       scrolled
                           ? 'bg-gray-800 text-white border-gray-600 hover:border-blue-500 focus:ring-blue-500'
                           : 'bg-transparent text-white border-white hover:border-blue-400'
