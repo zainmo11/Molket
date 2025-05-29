@@ -59,7 +59,7 @@ To run the MolKet web application locally, ensure you have the following install
 ## Project Structure
 
 ```plaintext
-molket-web/
+molket-main/
 ├── public/
 │   ├── logo.png                # MolKet logo
 │   ├── favicon-16x16.png       # Favicon
