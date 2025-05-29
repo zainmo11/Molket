@@ -1,13 +1,15 @@
 import React, { useEffect, useRef } from 'react';
 import { motion } from 'framer-motion';
+import { useTranslation } from 'react-i18next';
+import i18n from "i18next";
 
 const Hero: React.FC = () => {
   const canvasRef = useRef<HTMLCanvasElement>(null);
-
+  const { t } = useTranslation();
+  const isEnglish = i18n.language === 'en';
   useEffect(() => {
     const canvas = canvasRef.current;
     if (!canvas) return;
-
     const ctx = canvas.getContext('2d');
     if (!ctx) return;
 
@@ -18,9 +20,6 @@ const Hero: React.FC = () => {
 
     window.addEventListener('resize', handleResize);
     handleResize();
-
-    const particlesArray: Particle[] = [];
-    const numberOfParticles = Math.min(100, Math.floor(window.innerWidth / 10));
 
     class Particle {
       x: number;
@@ -43,13 +42,11 @@ const Hero: React.FC = () => {
       update() {
         this.x += this.speedX;
         this.y += this.speedY;
-
         if (this.x > canvas.width || this.x < 0) this.speedX = -this.speedX;
         if (this.y > canvas.height || this.y < 0) this.speedY = -this.speedY;
       }
 
       draw() {
-        if (!ctx) return;
         ctx.fillStyle = this.color;
         ctx.beginPath();
         ctx.arc(this.x, this.y, this.size, 0, Math.PI * 2);
@@ -57,20 +54,16 @@ const Hero: React.FC = () => {
       }
     }
 
-    const init = () => {
-      particlesArray.length = 0;
-      for (let i = 0; i < numberOfParticles; i++) {
-        particlesArray.push(new Particle());
-      }
-    };
-
-    init();
+    const particlesArray: Particle[] = [];
+    for (let i = 0; i < Math.min(100, Math.floor(window.innerWidth / 10)); i++) {
+      particlesArray.push(new Particle());
+    }
 
     const animate = () => {
       ctx.clearRect(0, 0, canvas.width, canvas.height);
-      particlesArray.forEach(particle => {
-        particle.update();
-        particle.draw();
+      particlesArray.forEach(p => {
+        p.update();
+        p.draw();
       });
       connectParticles();
       requestAnimationFrame(animate);
@@ -102,10 +95,7 @@ const Hero: React.FC = () => {
   }, []);
 
   return (
-      <section
-          id="home"
-          className="relative min-h-screen flex items-center justify-center px-4 py-12 sm:py-20 overflow-hidden"
-      >
+      <section id="home" className="relative min-h-screen flex items-center justify-center px-4 py-12 sm:py-20 overflow-hidden">
         <canvas
             ref={canvasRef}
             className="absolute inset-0 w-full h-full bg-gradient-to-b from-blue-900 via-indigo-900 to-purple-900"
@@ -122,12 +112,16 @@ const Hero: React.FC = () => {
           />
 
           <motion.h1
-              className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-6"
+              className={`font-bold text-white mb-6 transition-all duration-300 ${
+                  isEnglish
+                      ? 'text-2xl sm:text-3xl md:text-4xl lg:text-5xl'
+                      : 'text-xl sm:text-2xl md:text-3xl lg:text-4xl'
+              }`}
               initial={{opacity: 0}}
               animate={{opacity: 1}}
               transition={{duration: 0.8, delay: 0.2}}
           >
-            Next-Generation Quantum Solutions
+            {t('home.title')}
           </motion.h1>
 
           <motion.div
@@ -137,40 +131,26 @@ const Hero: React.FC = () => {
               transition={{duration: 0.8, delay: 0.4}}
           >
             <p className="text-lg sm:text-xl text-white/90 mb-8">
-              MolKet offers management consulting and AI services for:
+              {t('home.description')}
             </p>
 
             <ul className="space-y-3 text-base sm:text-lg text-white/90 mb-8 mx-auto max-w-md">
-              <motion.li
-                  className="bg-white/10 backdrop-blur-sm rounded-lg px-4 py-2"
-                  initial={{opacity: 0, x: -20}}
-                  animate={{opacity: 1, x: 0}}
-                  transition={{duration: 0.5, delay: 0.6}}
-              >
-                Quantum molecular dynamics
+              <motion.li className="bg-white/10 backdrop-blur-sm rounded-lg px-4 py-2" initial={{x: -20, opacity: 0}}
+                         animate={{x: 0, opacity: 1}} transition={{delay: 0.6}}>
+                {t('home.services_list.quantum_molecular_dynamics')}
               </motion.li>
-              <motion.li
-                  className="bg-white/10 backdrop-blur-sm rounded-lg px-4 py-2"
-                  initial={{opacity: 0, x: -20}}
-                  animate={{opacity: 1, x: 0}}
-                  transition={{duration: 0.5, delay: 0.7}}
-              >
-                Cryptography
+              <motion.li className="bg-white/10 backdrop-blur-sm rounded-lg px-4 py-2" initial={{x: -20, opacity: 0}}
+                         animate={{x: 0, opacity: 1}} transition={{delay: 0.7}}>
+                {t('home.services_list.cryptography')}
               </motion.li>
-              <motion.li
-                  className="bg-white/10 backdrop-blur-sm rounded-lg px-4 py-2"
-                  initial={{opacity: 0, x: -20}}
-                  animate={{opacity: 1, x: 0}}
-                  transition={{duration: 0.5, delay: 0.8}}
-              >
-                Neuromorphic-based computing
+              <motion.li className="bg-white/10 backdrop-blur-sm rounded-lg px-4 py-2" initial={{x: -20, opacity: 0}}
+                         animate={{x: 0, opacity: 1}} transition={{delay: 0.8}}>
+                {t('home.services_list.neuromorphic_computing')}
               </motion.li>
             </ul>
 
             <p className="text-base sm:text-lg text-white/90 mb-10">
-              Supported by cloud-based hybrid HPC & quantum computing platforms, enabling the development of advanced
-              machine
-              learning algorithms with significant predictive power.
+              {t('home.support_text')}
             </p>
 
             <motion.div
@@ -181,17 +161,17 @@ const Hero: React.FC = () => {
             >
               <a
                   href="https://1u0ya8k0gol.typeform.com/to/RyIvarq4"
-                  rel="nofollow noopener"
                   target="_blank"
+                  rel="nofollow noopener"
                   className="w-full sm:w-auto px-8 py-3 rounded-full bg-white text-blue-900 font-medium hover:bg-blue-100 transition-colors duration-300 shadow-lg hover:shadow-xl text-center"
               >
-                Request a Demo
+                {t('home.request_demo')}
               </a>
               <a
                   href="#services"
                   className="w-full sm:w-auto px-8 py-3 rounded-full border border-white/40 text-white font-medium hover:bg-white/10 transition-colors duration-300 text-center"
               >
-                Explore Services
+                {t('home.explore_services')}
               </a>
             </motion.div>
           </motion.div>

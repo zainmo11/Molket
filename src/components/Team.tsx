@@ -1,52 +1,77 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { Linkedin, Youtube, Award } from 'lucide-react';
-
+import { useTranslation } from 'react-i18next';
 const Team: React.FC = () => {
+  const { t } = useTranslation(); // Initialize translation functionality
+
   const teamMembers = [
     {
-      name: "Dr. Taha Selim",
-      title: "Directeur Général - General Manager",
+      name: t('team.founder_1.name'), // Fetch localized name
+      title: t('team.founder_1.role'), // Fetch localized role
       image: "./taha_profile_bw_enhance_circle_wbackn.png",
       credentials: [
-        "Lecturer/Researcher (QC Education Officer), Amsterdam University of Applied Sciences",
-        "MVP Founder Member QSECDEF",
-        "PhD Quantum Theoretical & Computational Chemistry",
-        "M.Sc. of Quantum physics, Lasers, & Materials"
+        t('team.founder_1.credentials.item_1'),
+        t('team.founder_1.credentials.item_2'),
+        t('team.founder_1.credentials.item_3'),
+        t('team.founder_1.credentials.item_4'),
       ],
       talks: [
-        { title: "Co-speaker lightning talk Simulating quantum molecular dynamics with Julia at JuliaCon 2024", url: "https://pretalx.com/juliacon2024/talk/U9NF3A/" },
-        { title: "Speaker, Carbon dioxide (CO2) as a quantum molecular sensor in protoplanetary disks, at APS March Meeting 2024", url: "https://meetings.aps.org/Meeting/MAR24/Session/LL03.3" },
-        { title: "Speaker, Carbon dioxide (CO2) as a quantum molecular sensor in protoplanetary disks, at APS March Meeting 2024", url: "https://meetings.aps.org/Meeting/MAR24/Session/LL03.3" }
+        {
+          title: t('team.founder_1.talks.item_1'),
+          url: "https://pretalx.com/juliacon2024/talk/U9NF3A/",
+        },
+        {
+          title: t('team.founder_1.talks.item_2'),
+          url: "https://meetings.aps.org/Meeting/MAR24/Session/LL03.3",
+        },
       ],
       publications: [
-        { title: "Carbon dioxide (CO2) as a quantum molecular sensor in protoplanetary disks, at APS March Meeting 2024", url: "https://meetings.aps.org/Meeting/MAR24/Session/LL03.3" },
-        { title: "State-to-state rovibrational transition rates for CO2 in the bend mode in collisions with He atoms, J. Chem. Phys., 159, 164310 (2023)", url: "https://doi.org/10.1063/5.0174787" }
+        {
+          title: t('team.founder_1.publications.item_1'),
+          url: "https://meetings.aps.org/Meeting/MAR24/Session/LL03.3",
+        },
+        {
+          title: t('team.founder_1.publications.item_2'),
+          url: "https://doi.org/10.1063/5.0174787",
+        },
       ],
-      linkedin: "https://www.linkedin.com/in/tiselim/"
+      linkedin: "https://www.linkedin.com/in/tiselim/",
     },
     {
-      name: "Alain Chancé",
-      title: "Président - President",
+      name: t('team.founder_2.name'),
+      title: t('team.founder_2.role'),
       image: "./Alain_Chance-modified.png",
       credentials: [
-        "Principal consultant with 30+ years experience in major management consulting firms",
-        "MVP Founder Member QSECDEF",
-        "IEEE Senior Member",
-        "Society affiliate American Chemical Society (ACS)",
-        "Member American Physical Society (APS)",
-        "Qiskit Advocate & IBM Certified Associate Developer"
+        t('team.founder_2.credentials.item_1'),
+        t('team.founder_2.credentials.item_2'),
+        t('team.founder_2.credentials.item_3'),
+        t('team.founder_2.credentials.item_4'),
+        t('team.founder_2.credentials.item_5'),
+        t('team.founder_2.credentials.item_6'),
       ],
       talks: [
-        { title: "Co-speaker lightning talk Simulating quantum molecular dynamics with Julia at JuliaCon 2024", url: "https://pretalx.com/juliacon2024/talk/U9NF3A/" },
-        { title: "Keynote co-speaker \"Combining the power of AI with Quantum\" at the World Artificial Intelligence Cannes Festival (WAICF), Cannes, France, Feb. 9, 2024", url: "#" }
+        {
+          title: t('team.founder_2.talks.item_1'),
+          url: "https://pretalx.com/juliacon2024/talk/U9NF3A/",
+        },
+        {
+          title: t('team.founder_2.talks.item_2'),
+          url: "#",
+        },
       ],
       publications: [
-        { title: "QPP-Alain, repository of the conference paper Quantum Permutation Pad with Qiskit Runtime", url: "https://github.com/AlainChance/QPP-Alain" },
-        { title: "Quantum Permutation Pad Corinthians, In: Femmam, S., Lorenz, P. (eds) Recent Advances in Communication Networks and Embedded Systems", url: "https://doi.org/10.1007/978-3-031-59619-3_12" }
+        {
+          title: t('team.founder_2.publications.item_1'),
+          url: "https://github.com/AlainChance/QPP-Alain",
+        },
+        {
+          title: t('team.founder_2.publications.item_2'),
+          url: "https://doi.org/10.1007/978-3-031-59619-3_12",
+        },
       ],
-      linkedin: "https://www.linkedin.com/in/alainchance/"
-    }
+      linkedin: "https://www.linkedin.com/in/alainchance/",
+    },
   ];
 
   const container = {
@@ -54,14 +79,14 @@ const Team: React.FC = () => {
     show: {
       opacity: 1,
       transition: {
-        staggerChildren: 0.3
-      }
-    }
+        staggerChildren: 0.3,
+      },
+    },
   };
 
   const item = {
     hidden: { opacity: 0, y: 50 },
-    show: { opacity: 1, y: 0, transition: { duration: 0.8 } }
+    show: { opacity: 1, y: 0, transition: { duration: 0.8 } },
   };
 
   return (
@@ -74,7 +99,9 @@ const Team: React.FC = () => {
               viewport={{ once: true }}
               transition={{ duration: 0.8 }}
           >
-            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">MolKet Founders</h2>
+            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+              {t('team.title')} {/* Localized title */}
+            </h2>
             <div className="h-1 w-20 bg-blue-600 mx-auto mt-6"></div>
           </motion.div>
 
@@ -91,7 +118,7 @@ const Team: React.FC = () => {
                     className="bg-white rounded-xl shadow-xl overflow-hidden flex flex-col md:flex-row"
                     variants={item}
                 >
-                  {/* Image container with gradient background */}
+                  {/* Image container */}
                   <div className="md:w-1/3 bg-gradient-to-br from-blue-600 to-indigo-800 flex items-center justify-center p-6">
                     <img
                         src={member.image}
@@ -106,7 +133,9 @@ const Team: React.FC = () => {
                     <p className="text-blue-600 font-medium mb-4">{member.title}</p>
 
                     <div className="mb-4">
-                      <h4 className="text-sm font-semibold text-gray-600 uppercase mb-2">Credentials</h4>
+                      <h4 className="text-sm font-semibold text-gray-600 uppercase mb-2">
+                        {t('team.founder_1.credentials.title')} {/* Localized credentials title */}
+                      </h4>
                       <ul className="space-y-1">
                         {member.credentials.map((credential, idx) => (
                             <li key={idx} className="text-sm text-gray-600 flex items-start">
@@ -118,7 +147,9 @@ const Team: React.FC = () => {
                     </div>
 
                     <div className="mb-4">
-                      <h4 className="text-sm font-semibold text-gray-600 uppercase mb-2">Publications</h4>
+                      <h4 className="text-sm font-semibold text-gray-600 uppercase mb-2">
+                        {t('team.founder_1.publications.title')} {/* Localized publications title */}
+                      </h4>
                       <ul className="space-y-1">
                         {member.publications.map((pub, idx) => (
                             <li key={idx} className="text-sm text-gray-600">
@@ -132,7 +163,9 @@ const Team: React.FC = () => {
                     </div>
 
                     <div className="mb-4">
-                      <h4 className="text-sm font-semibold text-gray-600 uppercase mb-2">Talks</h4>
+                      <h4 className="text-sm font-semibold text-gray-600 uppercase mb-2">
+                        {t('team.founder_1.talks.title')} {/* Localized talks title */}
+                      </h4>
                       <ul className="space-y-1">
                         {member.talks.map((talk, idx) => (
                             <li key={idx} className="text-sm text-gray-600">
@@ -145,7 +178,6 @@ const Team: React.FC = () => {
                       </ul>
                     </div>
 
-                    {/* Buttons at the bottom */}
                     <div className="mt-auto flex space-x-3">
                       <a
                           href={member.linkedin}
@@ -156,24 +188,17 @@ const Team: React.FC = () => {
                         <Linkedin className="w-5 h-5" />
                       </a>
                       <a
-                          href="https://www.youtube.com/watch?v=C0rrzae7IGY"
+                          href="https://www.youtube.com/channel"
                           target="_blank"
                           rel="noopener noreferrer"
                           className="p-2 bg-gray-100 hover:bg-red-100 rounded-full text-red-600 transition-colors duration-300"
                       >
                         <Youtube className="w-5 h-5" />
                       </a>
-                      <a
-                          href={`#${member.name.toLowerCase().replace(' ', '-')}-full-profile`}
-                          className="p-2 bg-gray-100 hover:bg-blue-100 rounded-full text-blue-600 transition-colors duration-300"
-                      >
-                        <Award className="w-5 h-5" />
-                      </a>
                       <button
                           className="ml-auto text-sm font-medium text-blue-600 hover:text-blue-800 transition-colors duration-300"
-                          onClick={() => window.open(`#${member.name.toLowerCase().replace(' ', '-')}-full-profile`, '_self')}
                       >
-                        View Full Profile
+                        {t('team.founder_1.view_profile')} {/* Localized 'View Full Profile' button */}
                       </button>
                     </div>
                   </div>

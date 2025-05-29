@@ -1,0 +1,182 @@
+{
+  "navbar": {
+    "logo": "MolKet",
+    "home": "Home",
+    "about": "About",
+    "services": "Services",
+    "how_it_works": "How It Works",
+    "team": "Team",
+    "contact": "Contact",
+    "resources": "Resources",
+    "resources_menu": {
+      "use_cases": "Use Cases",
+      "lab": "Lab",
+      "molket_jl": "MolKet.jl"
+    }
+  },
+  "home": {
+    "title": "Next-Generation Quantum Solutions",
+    "description": "MolKet offers management consulting and AI services for:",
+    "services_list": {
+      "quantum_molecular_dynamics": "Quantum molecular dynamics",
+      "cryptography": "Cryptography",
+      "neuromorphic_computing": "Neuromorphic-based computing"
+    },
+    "support_text": "Supported by cloud-based hybrid HPC & quantum computing platforms, enabling the development of advanced machine learning algorithms with significant predictive power.",
+    "request_demo": "Request a Demo",
+    "explore_services": "Explore Services",
+    "scroll_down": "Scroll Down"
+  },
+  "about": {
+    "title": "About MolKet",
+    "subtitle": "Fast and accurate molecular design simulations assisted by AI",
+    "description_1": "Chemistry simulations are time consuming and complicated to prepare. Our goal is to make the design process easier and fast. We use AI to train general Hamiltonians for chemistry simulations that can be executed efficiently on HPC, quantum computers, and on simulations of quantum computers.",
+    "description_2": "The company also offers consulting services for training AI on datasets from fields such as chemistry, biology, materials science, and cosmology. These services are supported by physics-based kernels (e.g., quantum-mechanical kernels), enabling the development of advanced machine learning algorithms with significant predictive power.",
+    "process_title": "Highly engineered, standard process for quantum chemistry simulations"
+  },
+  "services": {
+    "title": "Our Complementary Services",
+    "description": "Alongside the cloud services, we can help you in the following areas",
+    "service_1": {
+      "title": "Designing algorithms for quantum molecular dynamics",
+      "description": "Custom algorithm development optimized for your specific molecular simulation needs."
+    },
+    "service_2": {
+      "title": "Adapt your application using HPC/QC",
+      "description": "Integration services to enhance your existing applications with high-performance and quantum computing capabilities."
+    },
+    "service_3": {
+      "title": "Training, consultancy, and knowledge transfer",
+      "description": "Expert guidance and education to help your team master quantum computing technologies and applications."
+    },
+    "explore_button": "Explore Our Services"
+  },
+  "how_it_works": {
+    "title": "How Does It Work?",
+    "step_1": {
+      "title": "Choose your AI-assisted Environment",
+      "description": "You can choose a JupyterHub-like environment or MolKet studio. Use MolKet's engine on your computer in Visual Studio or program it online on the web.",
+      "button": "MolKet SDK"
+    },
+    "step_2": {
+      "title": "Type your code or drag and design your simulation",
+      "description": "Type your code in natural language, or choose from our library. Our AI-assistant will help you filling the code writing and suggest modules that you can use. Alternatively, you can design the simulation in a flow chart format.",
+      "button_1": "Start Simulation",
+      "button_2": "MolKet Studio"
+    },
+    "step_3": {
+      "title": "MolKet's AI engine will assist in selecting the algorithms and computing platforms",
+      "description": "Depending on the computational complexity and the type of each step in the simulation, MolKet's AI engine will choose the proper quantum/HPC architecture for you. It will also optimize the execution on each type of hardware by training the general Hamiltonians and map them onto quantum.",
+      "button": "MolKet SDK"
+    },
+    "step_4": {
+      "title": "Get the results and post-processing using builtin ML and AI libraries",
+      "description": "Depending on the computational complexity and the type of each step in the simulation, MolKet's AI engine will choose the proper quantum/HPC architecture for you.",
+      "button": "Start Simulation"
+    }
+  },
+  "featured_videos": {
+    "title": "Featured Videos",
+    "description": "Discover how MolKet is revolutionizing quantum computing",
+    "video_1": {
+      "title": "Quantum Intelligence for Chemistry Simulations",
+      "description": "MolKet harnesses the power of quantum intelligence to revolutionize simulations in chemistry and physics. Our AI agents, trained on intricate Hamiltonian derivations, predict the behavior of complex systems, significantly accelerating research and discovery."
+    },
+    "video_2": {
+      "title": "Accelerating Chemical Design with AI Agents",
+      "description": "Alain Chancé and Dr. Taha Selim propose leveraging AI agents to accelerate chemical design and quantum dynamical simulations. These AI agents can be trained on the inputs and outputs of quantum chemistry and dynamics algorithms, effectively replacing computationally expensive components."
+    }
+  },
+  "Our_Development_Model": {
+      "title": "Our Development Model",
+      "subtitle": "We can help you by providing what you need from built-in libraries that help you in your execution."
+  },
+  "team": {
+    "title": "MolKet Founders",
+    "founder_1": {
+      "name": "Dr. Taha Selim",
+      "role": "Directeur Général - General Manager",
+      "credentials": {
+        "title": "Credentials",
+        "item_1": "Lecturer/Researcher (QC Education Officer), Amsterdam University of Applied Sciences",
+        "item_2": "MVP Founder Member QSECDEF",
+        "item_3": "PhD Quantum Theoretical & Computational Chemistry",
+        "item_4": "M.Sc. of Quantum physics, Lasers, & Materials"
+      },
+      "talks": {
+        "title": "Recent Talks",
+        "item_1": "Co-speaker lightning talk Simulating quantum molecular dynamics with Julia at JuliaCon 2024",
+        "item_2": "Speaker, Carbon dioxide (CO2) as a quantum molecular sensor in protoplanetary disks, at APS March Meeting 2024"
+      },
+      "publications": {
+        "title": "Recent Publications",
+        "item_1": "Carbon dioxide (CO2) as a quantum molecular sensor in protoplanetary disks, at APS March Meeting 2024",
+        "item_2": "State-to-state rovibrational transition rates for CO2 in the bend mode in collisions with He atoms, J. Chem. Phys., 159, 164310 (2023)"
+      },
+      "linkedin": "LinkedIn Profile",
+      "view_profile": "View Full Profile"
+    },
+    "founder_2": {
+      "name": "Alain Chancé",
+      "role": "Président - President",
+      "credentials": {
+        "title": "Credentials",
+        "item_1": "Principal consultant with 30+ years experience in major management consulting firms",
+        "item_2": "MVP Founder Member QSECDEF",
+        "item_3": "IEEE Senior Member",
+        "item_4": "Society affiliate American Chemical Society (ACS)",
+        "item_5": "Member American Physical Society (APS)",
+        "item_6": "Qiskit Advocate & IBM Certified Associate Developer"
+      },
+      "talks": {
+        "title": "Recent Talks",
+        "item_1": "Co-speaker lightning talk Simulating quantum molecular dynamics with Julia at JuliaCon 2024",
+        "item_2": "Keynote co-speaker \"Combining the power of AI with Quantum\" at the World Artificial Intelligence Cannes Festival (WAICF), Cannes, France, Feb. 9, 2024"
+      },
+      "publications": {
+        "title": "Recent Publications",
+        "item_1": "QPP-Alain, repository of the conference paper Quantum Permutation Pad with Qiskit Runtime",
+        "item_2": "Quantum Permutation Pad Corinthians, In: Femmam, S., Lorenz, P. (eds) Recent Advances in Communication Networks and Embedded Systems"
+      },
+      "linkedin": "LinkedIn Profile",
+      "view_profile": "View Full Profile"
+    }
+  },
+  "contact": {
+    "title": "Contact Us",
+    "description": "Get in touch with our team",
+    "location": {
+      "title": "Our Location",
+      "address": "MOLKET SAS, 38, rue des Mathurins, 75008, Paris, France"
+    },
+    "email": {
+      "title": "Email Us",
+      "contact_email": "contact@molket.io",
+      "business_email": "business@molket.io"
+    },
+    "phone": {
+      "title": "Call Us",
+      "number": "+33 1 42 65 28 27"
+    },
+    "request_demo": "Request a Demo"
+  },
+  "footer": {
+    "description": "MolKet offers consulting and AI services for modeling quantum molecular solutions with cloud-based software on hybrid HPC and quantum computing platforms.",
+    "quick_links": {
+      "title": "Quick Links",
+      "about": "About Us",
+      "services": "Services",
+      "how_it_works": "How It Works",
+      "team": "Our Team",
+      "contact": "Contact"
+    },
+    "resources": {
+      "title": "Resources",
+      "use_cases": "Use Cases",
+      "lab": "Lab",
+      "molket_jl": "MolKet.jl",
+      "legal_mentions": "Mentions légales"
+    },
+    "copyright": "© 2025 MolKet SAS. All rights reserved."
+  }
+}

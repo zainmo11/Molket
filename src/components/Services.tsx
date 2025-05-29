@@ -1,24 +1,27 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { Cpu, Code, BarChart4 } from 'lucide-react';
+import { useTranslation } from 'react-i18next';
 
 const Services: React.FC = () => {
+  const { t } = useTranslation();
+
   const services = [
     {
       icon: <Cpu className="w-10 h-10" />,
-      title: "Designing algorithms for quantum molecular dynamics",
-      description: "Custom algorithm development optimized for your specific molecular simulation needs."
+      title: t('services.service_1.title'),
+      description: t('services.service_1.description'),
     },
     {
       icon: <Code className="w-10 h-10" />,
-      title: "Adapt your application using HPC/QC",
-      description: "Integration services to enhance your existing applications with high-performance and quantum computing capabilities."
+      title: t('services.service_2.title'),
+      description: t('services.service_2.description'),
     },
     {
       icon: <BarChart4 className="w-10 h-10" />,
-      title: "Training, consultancy, and knowledge transfer",
-      description: "Expert guidance and education to help your team master quantum computing technologies and applications."
-    }
+      title: t('services.service_3.title'),
+      description: t('services.service_3.description'),
+    },
   ];
 
   const container = {
@@ -46,8 +49,12 @@ const Services: React.FC = () => {
               viewport={{ once: true }}
               transition={{ duration: 0.8 }}
           >
-            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Our Complementary Services</h2>
-            <p className="text-lg text-gray-600">Alongside the cloud services, we can help you in the following areas</p>
+            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+              {t('services.title')}
+            </h2>
+            <p className="text-lg text-gray-600">
+              {t('services.description')}
+            </p>
             <div className="h-1 w-20 bg-blue-600 mx-auto mt-6"></div>
           </motion.div>
 
@@ -68,8 +75,12 @@ const Services: React.FC = () => {
                     <div className="w-16 h-16 mx-auto bg-blue-100 rounded-full flex items-center justify-center text-blue-600 mb-6">
                       {service.icon}
                     </div>
-                    <h3 className="text-xl font-bold text-center text-gray-900 mb-4">{service.title}</h3>
-                    <p className="text-gray-600 text-center">{service.description}</p>
+                    <h3 className="text-xl font-bold text-center text-gray-900 mb-4">
+                      {service.title}
+                    </h3>
+                    <p className="text-gray-600 text-center">
+                      {service.description}
+                    </p>
                   </div>
                   <div className="bg-gradient-to-r from-blue-600 to-indigo-600 h-2 w-full rounded-b-lg"></div>
                 </motion.div>
@@ -89,7 +100,7 @@ const Services: React.FC = () => {
                 target="_blank"
                 className="px-8 py-3 rounded-full bg-blue-600 text-white font-medium hover:bg-blue-700 transition-colors duration-300 shadow-lg hover:shadow-xl"
             >
-              Explore Our Services
+              {t('services.explore_button')}
             </a>
           </motion.div>
         </div>

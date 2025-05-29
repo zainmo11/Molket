@@ -1,7 +1,10 @@
 import React from 'react';
 import { motion } from 'framer-motion';
+import { useTranslation } from 'react-i18next';
 
 const About: React.FC = () => {
+  const { t } = useTranslation();
+
   return (
       <section id="about" className="py-20 bg-gray-50">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
@@ -13,7 +16,9 @@ const About: React.FC = () => {
                 viewport={{ once: true }}
                 transition={{ duration: 0.8 }}
             >
-              <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">About MolKet</h2>
+              <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+                {t('about.title')}
+              </h2>
               <div className="h-1 w-20 bg-blue-600 mx-auto mb-8"></div>
             </motion.div>
 
@@ -25,21 +30,14 @@ const About: React.FC = () => {
                   transition={{ duration: 0.8 }}
               >
                 <h3 className="text-2xl font-bold text-gray-900 mb-6">
-                  Fast and accurate molecular design simulations assisted by AI
+                  {t('about.subtitle')}
                 </h3>
                 <div className="h-1 w-16 bg-blue-600 mb-6"></div>
                 <p className="text-gray-700 mb-6">
-                  Chemistry simulations are time consuming and complicated to prepare.
-                  Our goal is to make the design process easier and fast. We use AI to train general Hamiltonians for
-                  chemistry simulations that can be executed efficiently on HPC, quantum computers, and on simulations
-                  of quantum computers.
+                  {t('about.description_1')}
                 </p>
                 <p className="text-gray-700">
-                  The company also offers consulting services for training AI on datasets
-                  from fields such as chemistry, biology, materials science, and cosmology.
-                  These services are supported by physics-based kernels (e.g.,
-                  quantum-mechanical kernels), enabling the development of advanced machine
-                  learning algorithms with significant predictive power.
+                  {t('about.description_2')}
                 </p>
               </motion.div>
 
@@ -66,13 +64,11 @@ const About: React.FC = () => {
                 transition={{ duration: 0.8 }}
             >
               <h3 className="text-2xl font-bold text-gray-900 mb-6 text-center">
-                Highly engineered, standard process for quantum chemistry simulations
+                {t('about.process_title')}
               </h3>
               <div className="h-1 w-16 bg-blue-600 mx-auto mb-8"></div>
               <div className="rounded-lg overflow-hidden shadow-xl">
-                <video
-                    className="w-full h-auto"
-                    controls>
+                <video className="w-full h-auto" controls>
                   <source src="./ezgif.com-gif-to-mp4.mp4" type="video/mp4" />
                   Your browser does not support the video tag.
                 </video>
