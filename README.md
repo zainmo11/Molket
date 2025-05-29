@@ -72,6 +72,16 @@ molket-web/
 │   ├── main.tsx                # Entry point for React application
 │   ├── index.css               # Tailwind CSS and custom styles
 │   ├── components/             # React components
+|       ├── About.tsx
+|       ├── Contact.tsx
+|       ├── Footer.tsx
+|       ├── Hero.tsx
+|       ├── HowItWorks.tsx
+|       ├── Model.tsx
+|       ├── Navbar.tsx
+|       ├── Services.tsx
+|       ├── Team.tsx
+|       ├── Videos.tsx
 │   ├── assets/                 # Additional static assets
 ├── index.html                  # Main HTML file
 ├── package.json                # Project dependencies and scripts
