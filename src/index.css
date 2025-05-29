@@ -68,3 +68,7 @@ html, body {
   overflow-x: hidden;
   width: 100%;
 }
+
+span.token.operator {
+  background: none !important;
+}
