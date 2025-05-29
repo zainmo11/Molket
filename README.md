@@ -32,7 +32,7 @@ To run the MolKet web application locally, ensure you have the following install
 
 1. **Clone the Repository**:
    ```bash
-   git clone https://github.com/molket-io/molket-web.git
+   git clone https://github.com/zainmo11/Molket.git
    cd molket-web
    ```
 
