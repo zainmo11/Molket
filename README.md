@@ -122,17 +122,6 @@ Deploy the application to a static hosting service like Vercel, Netlify, or GitH
 - **Prism.js**: Syntax highlighting for code snippets.
 - **Lucide Icons**: SVG icons used for visual elements.
 
-## Contributing
-
-Contributions are welcome! To contribute:
-
-1. Fork the repository.
-2. Create a new branch (`git checkout -b feature/your-feature`).
-3. Make your changes and commit (`git commit -m "Add your feature"`).
-4. Push to the branch (`git push origin feature/your-feature`).
-5. Open a pull request.
-
-Please ensure your code follows the project’s coding standards and includes relevant tests.
 
 ## License
 
