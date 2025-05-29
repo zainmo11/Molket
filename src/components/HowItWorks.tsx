@@ -2,6 +2,7 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import { Prism as SyntaxHighlighter } from 'react-syntax-highlighter';
 import { vscDarkPlus } from 'react-syntax-highlighter/dist/esm/styles/prism';
+
 const HowItWorks: React.FC = () => {
   const steps = [
     {
@@ -68,8 +69,14 @@ vib_WF0 = H_op.vib_eigW('0','groundstate')
   return (
       <section id="how-it-works" className="py-20 bg-gray-900 text-white">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-          {/* Title */}
-          <motion.div className="text-center mb-16" initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.8 }}>
+          {/* Section Title */}
+          <motion.div
+              className="text-center mb-16"
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.8 }}
+          >
             <h2 className="text-3xl md:text-4xl font-bold mb-4">How Does It Work?</h2>
             <div className="h-1 w-20 bg-blue-500 mx-auto mt-6"></div>
           </motion.div>
@@ -79,13 +86,30 @@ vib_WF0 = H_op.vib_eigW('0','groundstate')
 
             {steps.map((step, index) => (
                 <div key={index} className="mb-16 last:mb-0">
-                  <div className={`flex flex-col lg:flex-row items-center ${step.isLeft ? '' : 'lg:flex-row-reverse'}`}>
-                    <motion.div className={`w-full lg:w-1/2 ${step.isLeft ? 'lg:pr-12' : 'lg:pl-12'} mb-8 lg:mb-0`} initial={{ opacity: 0, x: step.isLeft ? -50 : 50 }} whileInView={{ opacity: 1, x: 0 }} viewport={{ once: true }} transition={{ duration: 0.8 }}>
+                  <div
+                      className={`flex flex-col lg:flex-row ${step.isLeft ? '' : 'lg:flex-row-reverse'} items-stretch lg:items-center`}
+                  >
+                    {/* Step content box */}
+                    <motion.div
+                        className={`w-full lg:w-1/2 ${step.isLeft ? 'lg:pr-12' : 'lg:pl-12'} mb-8 lg:mb-0 min-w-0`}
+                        initial={{ opacity: 0, x: step.isLeft ? -50 : 50 }}
+                        whileInView={{ opacity: 1, x: 0 }}
+                        viewport={{ once: true }}
+                        transition={{ duration: 0.8 }}
+                    >
                       <div className="p-6 rounded-lg bg-gray-800 h-full">
                         <h3 className="text-xl font-bold mb-4">{step.title}</h3>
                         <p className="text-gray-300 mb-6">{step.content}</p>
                         <div className="overflow-x-auto rounded-md">
-                          <SyntaxHighlighter language="python" style={vscDarkPlus} customStyle={{ background: 'rgb(17 24 39 / var(--tw-bg-opacity))', padding: '1rem', fontSize: '0.85rem' }}>
+                          <SyntaxHighlighter
+                              language="python"
+                              style={vscDarkPlus}
+                              customStyle={{
+                                background: 'rgb(17 24 39 / var(--tw-bg-opacity))',
+                                padding: '1rem',
+                                fontSize: '0.85rem',
+                              }}
+                          >
                             {step.code}
                           </SyntaxHighlighter>
                         </div>
@@ -102,9 +126,18 @@ vib_WF0 = H_op.vib_eigW('0','groundstate')
                       </div>
                     </motion.div>
 
-                    <motion.div className="w-10 h-10 rounded-full bg-blue-600 border-4 border-gray-900 z-10 my-4 lg:my-0 flex items-center justify-center text-white font-bold" initial={{ scale: 0 }} whileInView={{ scale: 1 }} viewport={{ once: true }} transition={{ duration: 0.5 }}>
+                    {/* Step number */}
+                    <motion.div
+                        className="w-10 h-10 rounded-full bg-blue-600 border-4 border-gray-900 z-10 mx-auto my-4 lg:my-0 flex items-center justify-center text-white font-bold"
+                        initial={{ scale: 0 }}
+                        whileInView={{ scale: 1 }}
+                        viewport={{ once: true }}
+                        transition={{ duration: 0.5 }}
+                    >
                       {index + 1}
                     </motion.div>
+
+                    {/* Right spacer for layout balance on large screens */}
                     <div className="hidden lg:block lg:w-1/2"></div>
                   </div>
                 </div>
