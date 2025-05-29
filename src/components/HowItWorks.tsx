@@ -35,12 +35,17 @@ H_op.nuc_basis = ('harmonic','Gaussian')`,
       title: "MolKet's AI engine will assist in selecting the algorithms and computing platforms",
       content: "Depending on the computational complexity and the type of each step in the simulation, MolKet's AI engine will choose the proper quantum/HPC architecture for you. It will also optimize the execution on each type of hardware by training the general Hamiltonians and map them onto quantum.",
       code: `# define the rotational basis set (wavefunctions), ...
-# Default: spherical harmonics for linear molecules, and Wigner D-matrices for non-linear molecules.
+# Default: spherical harmonics for linear molecules,
+# and Wigner D-matrices for non-linear molecules.
 H_op.rot_basis = ('Ylm')
-# you can also define phase or choose real harmonics depending on the symmetry of the molecule
+# you can also define phase or choose real 
+# harmonics depending on the symmetry of the molecule
 
-# Define the chips for the computing part: the choice of the hardware and the backend
-H_op.Qchip = 'Qqx2' ## variations of Qqx4: Qqx2, Qqx3, Qqx4, Qqx5, Qqx20, Qqx_qasm_simulator
+# Define the chips for the computing part: 
+# the choice of the hardware and the backend
+H_op.Qchip = 'Qqx2' 
+# variations of Qqx4: Qqx2, Qqx3, Qqx4, Qqx5,
+# Qqx20, Qqx_qasm_simulator
 ## accelerated computing with GPU
 H_op.HPCchip = 'GPU'`,
       isLeft: true
@@ -48,7 +53,8 @@ H_op.HPCchip = 'GPU'`,
     {
       title: "Get the results and post-processing using builtin ML and AI libraries",
       content: "Depending on the computational complexity and the type of each step in the simulation, MolKet's AI engine will choose the proper quantum/HPC architecture for you.",
-      code: `# choose the simulators for the quantum and HPC backends, to be used in analysis as well 
+      code: `# choose the simulators for the quantum and HPC backends,
+# to be used in analysis as well 
 H_op.Qbackend = 'statevector_simulator'
 H_op.HPCbackend = 'local_qasm_simulator'
 vib_groundstate_energy= H_op.vib_eigE('0','groundstate')
