@@ -35,12 +35,17 @@ const Navbar: React.FC = () => {
   };
 
   return (
-      <nav className={`fixed w-full z-50 transition-all duration-300 ${scrolled ? 'bg-gray-900/90 shadow-md backdrop-blur-sm' : 'bg-transparent'}`}>
+      <nav
+          className={`fixed w-full z-50 transition-all duration-300 ${
+              scrolled ? 'bg-gray-900/90 shadow-md backdrop-blur-sm' : 'bg-transparent'
+          }`}
+      >
         <div className="max-w-7xl mx-auto px-0 sm:px-4 lg:px-4">
           <div className="flex items-center justify-between h-16 md:h-20 pl-4 sm:pl-6 lg:pl-8">
+            {/* Logo Section */}
             <div className="flex items-center md:mt-0">
               <a href="#home" className="flex items-center">
-                <img src="/logo.png" alt="MolKet Logo" className="h-7 w-auto" />
+                <img src="/logo.png" alt="MolKet Logo" className="h-7 w-auto"/>
               </a>
             </div>
 
@@ -57,7 +62,6 @@ const Navbar: React.FC = () => {
                     {t(link.key)}
                   </a>
               ))}
-
               <div className="relative group">
                 <button
                     className={`px-3 py-2 rounded-md text-sm font-semibold transition-colors duration-200 ${
@@ -65,8 +69,18 @@ const Navbar: React.FC = () => {
                     } flex items-center hover:text-blue-400`}
                 >
                   {t('navbar.resources')}
-                  <svg className="ml-1 h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7"/>
+                  <svg
+                      className="ml-1 h-4 w-4"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke="currentColor"
+                  >
+                    <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        strokeWidth={2}
+                        d="M19 9l-7 7-7-7"
+                    />
                   </svg>
                 </button>
                 <div
@@ -103,20 +117,42 @@ const Navbar: React.FC = () => {
               </select>
             </div>
 
-            {/* Mobile Menu Toggle */}
-            <button
-                onClick={() => setIsOpen(!isOpen)}
-                className={`md:hidden p-2 rounded-md pr-4 sm:pr-6 lg:pr-8 ${
-                    scrolled ? 'text-white' : 'text-white'
-                } hover:bg-blue-700 hover:text-white focus:outline-none`}
-            >
-              {isOpen ? <X className="h-6 w-6"/> : <Menu className="h-6 w-6"/>}
-            </button>
+            {/* Mobile Language Switcher */}
+            <div className="md:hidden flex items-center space-x-2">
+              <select
+                  onChange={handleLanguageChange}
+                  value={i18n.language}
+                  className={`ml-4 px-3 py-2 rounded-md text-sm border ${
+                      scrolled
+                          ? 'bg-gray-800 text-white border-gray-600 hover:border-blue-500 focus:ring-blue-500'
+                          : 'bg-transparent text-white border-white hover:border-blue-400'
+                  } focus:outline-none focus:ring-2 transition duration-200`}              >
+                <option value="en">EN</option>
+                <option value="fr">FR</option>
+                <option value="nl">NL</option>
+              </select>
+              {/* Mobile Menu Toggle */}
+              <button
+                  onClick={() => setIsOpen(!isOpen)}
+                  className={`p-2 rounded-md ${
+                      scrolled ? 'text-white' : 'text-white'
+                  } hover:bg-blue-700 hover:text-white focus:outline-none`}
+              >
+                {isOpen ? <X className="h-6 w-6"/> : <Menu className="h-6 w-6"/>}
+              </button>
+            </div>
           </div>
 
           {/* Mobile Menu */}
-          <div className={`md:hidden transition-all duration-300 ease-in-out ${isOpen ? 'max-h-screen opacity-100' : 'max-h-0 opacity-0 invisible'}`}>
-            <div className="px-4 sm:px-6 lg:px-8 pt-2 pb-3 space-y-1 bg-gray-900/95 backdrop-blur-sm shadow-lg rounded-b-lg">
+          <div
+              className={`md:hidden transition-all duration-300 ease-in-out ${
+                  isOpen
+                      ? 'max-h-screen opacity-100'
+                      : 'max-h-0 opacity-0 invisible'
+              }`}
+          >
+            <div
+                className="px-4 sm:px-6 lg:px-8 pt-2 pb-3 space-y-1 bg-gray-900/95 backdrop-blur-sm shadow-lg rounded-b-lg">
               {[...navLinks, ...resourceLinks].map((link) => (
                   <a
                       key={link.key}
@@ -127,18 +163,6 @@ const Navbar: React.FC = () => {
                     {t(link.key)}
                   </a>
               ))}
-              {/* Language Switcher (Mobile) */}
-              <div className="mt-2">
-                <select
-                    onChange={handleLanguageChange}
-                    value={i18n.language}
-                    className="w-full px-3 py-2 rounded-md text-sm bg-gray-800 text-white border border-gray-600 hover:border-blue-500 focus:outline-none focus:ring-2 focus:ring-blue-500 transition duration-200"
-                >
-                  <option value="en">English</option>
-                  <option value="fr">Français</option>
-                  <option value="nl">Nederlands</option>
-                </select>
-              </div>
             </div>
           </div>
         </div>
