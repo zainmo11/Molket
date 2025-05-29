@@ -82,7 +82,10 @@ molket-main/
 |       ├── Services.tsx
 |       ├── Team.tsx
 |       ├── Videos.tsx
-│   ├── assets/                 # Additional static assets
+├── locales
+|   ├── en/translation.json
+|   ├── fr/translation.json
+|   ├── nl/translation.json
 ├── index.html                  # Main HTML file
 ├── package.json                # Project dependencies and scripts
 ├── vite.config.ts              # Vite configuration
