@@ -106,7 +106,8 @@
       "talks": {
         "title": "Recent Talks",
         "item_1": "Co-speaker lightning talk Simulating quantum molecular dynamics with Julia at JuliaCon 2024",
-        "item_2": "Speaker, Carbon dioxide (CO2) as a quantum molecular sensor in protoplanetary disks, at APS March Meeting 2024"
+        "item_2": "Speaker, Carbon dioxide (CO2) as a quantum molecular sensor in protoplanetary disks, at APS March Meeting 2024",
+        "item_3": "Panelist at the QED-C Quantum & AI Use Cases Panel (2025)"
       },
       "publications": {
         "title": "Recent Publications",
@@ -126,17 +127,20 @@
         "item_3": "IEEE Senior Member",
         "item_4": "Society affiliate American Chemical Society (ACS)",
         "item_5": "Member American Physical Society (APS)",
-        "item_6": "Qiskit Advocate & IBM Certified Associate Developer"
+        "item_6": "Qiskit Advocate & IBM Certified Associate Developer",
+        "item_7": "Master’s Degree in Science and Executive Engineering MINES Saint-Etienne, France (1981)"
       },
       "talks": {
         "title": "Recent Talks",
         "item_1": "Co-speaker lightning talk Simulating quantum molecular dynamics with Julia at JuliaCon 2024",
-        "item_2": "Keynote co-speaker \"Combining the power of AI with Quantum\" at the World Artificial Intelligence Cannes Festival (WAICF), Cannes, France, Feb. 9, 2024"
+        "item_2": "Keynote co-speaker \"Combining the power of AI with Quantum\" at the World Artificial Intelligence Cannes Festival (WAICF), Cannes, France, Feb. 9, 2024",
+        "item_3": "Panelist at the QED-C Quantum & AI Use Cases Panel (2025)"
       },
       "publications": {
         "title": "Recent Publications",
         "item_1": "QPP-Alain, repository of the conference paper Quantum Permutation Pad with Qiskit Runtime",
-        "item_2": "Quantum Permutation Pad Corinthians, In: Femmam, S., Lorenz, P. (eds) Recent Advances in Communication Networks and Embedded Systems"
+        "item_2": "Quantum Permutation Pad Corinthians, In: Femmam, S., Lorenz, P. (eds) Recent Advances in Communication Networks and Embedded Systems",
+        "item_3": "Quantum Chemistry and Computing for the Curious: Illustrated with Python and Qiskit® code, Keeper L. Sharkey, Alain Chancé, Packt (2022)"
       },
       "linkedin": "LinkedIn Profile",
       "view_profile": "View Full Profile"

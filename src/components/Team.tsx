@@ -25,6 +25,10 @@ const Team: React.FC = () => {
           title: t('team.founder_1.talks.item_2'),
           url: "https://meetings.aps.org/Meeting/MAR24/Session/LL03.3",
         },
+        {
+          title: t('team.founder_1.talks.item_3'),
+          url:"https://www.youtube.com/watch?v=5yBo3Jb71so"
+        }
       ],
       publications: [
         {
@@ -37,6 +41,7 @@ const Team: React.FC = () => {
         },
       ],
       linkedin: "https://www.linkedin.com/in/tiselim/",
+      github: "https://github.com/tahaselim",
     },
     {
       name: t('team.founder_2.name'),
@@ -49,6 +54,7 @@ const Team: React.FC = () => {
         t('team.founder_2.credentials.item_4'),
         t('team.founder_2.credentials.item_5'),
         t('team.founder_2.credentials.item_6'),
+        t('team.founder_2.credentials.item_7'),
       ],
       talks: [
         {
@@ -59,6 +65,10 @@ const Team: React.FC = () => {
           title: t('team.founder_2.talks.item_2'),
           url: "#",
         },
+        {
+          title: t('team.founder_1.talks.item_3'),
+          url:"https://www.youtube.com/watch?v=5yBo3Jb71so"
+        }
       ],
       publications: [
         {
@@ -69,8 +79,13 @@ const Team: React.FC = () => {
           title: t('team.founder_2.publications.item_2'),
           url: "https://doi.org/10.1007/978-3-031-59619-3_12",
         },
+        {
+          title: t('team.founder_2.publications.item_3'),
+          url: "https://www.amazon.com/Quantum-Chemistry-Computing-Curious-Illustrated/dp/1803243902"
+        }
       ],
       linkedin: "https://www.linkedin.com/in/alainchance/",
+      github: "https://github.com/AlainChance",
     },
   ];
 
@@ -185,7 +200,7 @@ const Team: React.FC = () => {
                           rel="noopener noreferrer"
                           className="p-2 bg-gray-100 hover:bg-blue-100 rounded-full text-blue-600 transition-colors duration-300"
                       >
-                        <Linkedin className="w-5 h-5" />
+                        <Linkedin className="w-5 h-5"/>
                       </a>
                       <a
                           href="https://www.youtube.com/channel"
@@ -193,13 +208,16 @@ const Team: React.FC = () => {
                           rel="noopener noreferrer"
                           className="p-2 bg-gray-100 hover:bg-red-100 rounded-full text-red-600 transition-colors duration-300"
                       >
-                        <Youtube className="w-5 h-5" />
+                        <Youtube className="w-5 h-5"/>
                       </a>
-                      <button
-                          className="ml-auto text-sm font-medium text-blue-600 hover:text-blue-800 transition-colors duration-300"
+                      <a
+                          href={member.github}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="text-sm font-medium text-blue-600 hover:text-blue-800 transition-colors duration-300 cursor-pointer mt-2"
                       >
-                        {t('team.founder_1.view_profile')} {/* Localized 'View Full Profile' button */}
-                      </button>
+                        {t('team.founder_1.view_profile')} {/* Localized 'View Full Profile' link */}
+                      </a>
                     </div>
                   </div>
                 </motion.div>

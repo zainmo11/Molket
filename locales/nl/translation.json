@@ -126,12 +126,14 @@
         "item_3": "IEEE Senior Lid",
         "item_4": "Affiliate van de American Chemical Society (ACS)",
         "item_5": "Lid van de American Physical Society (APS)",
-        "item_6": "Qiskit Advocaat & IBM Gecertificeerde Associate Ontwikkelaar"
+        "item_6": "Qiskit Advocaat & IBM Gecertificeerde Associate Ontwikkelaar",
+        "item_7": "Masterdiploma in Wetenschap en Executive Engineering, MINES Saint-Étienne, Frankrijk (1981)"
       },
       "talks": {
         "title": "Recente Presentaties",
         "item_1": "Mede-spreker bliksemtoespraak Simuleren van kwantummoleculaire dynamica met Julia bij JuliaCon 2024",
-        "item_2": "Keynote mede-spreker \"De kracht van AI combineren met kwantum\" op het World Artificial Intelligence Cannes Festival (WAICF), Cannes, Frankrijk, 9 feb. 2024"
+        "item_2": "Keynote mede-spreker \"De kracht van AI combineren met kwantum\" op het World Artificial Intelligence Cannes Festival (WAICF), Cannes, Frankrijk, 9 feb. 2024",
+        "item_3": "Quantum Chemistry and Computing for the Curious: Illustrated with Python and Qiskit® code, Keeper L. Sharkey, Alain Chancé, Packt (2022)"
       },
       "publications": {
         "title": "Recente Publicaties",

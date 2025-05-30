@@ -126,7 +126,8 @@
         "item_3": "Membre senior IEEE",
         "item_4": "Affilié à la Société Américaine de Chimie (ACS)",
         "item_5": "Membre de la Société Américaine de Physique (APS)",
-        "item_6": "Avocat Qiskit et Développeur Associé Certifié IBM"
+        "item_6": "Avocat Qiskit et Développeur Associé Certifié IBM",
+        "item_7": "Diplôme de Master en Sciences et en Ingénierie Exécutive, MINES Saint-Étienne, France (1981)"
       },
       "talks": {
         "title": "Conférences récentes",
@@ -136,7 +137,8 @@
       "publications": {
         "title": "Publications récentes",
         "item_1": "QPP-Alain, dépôt de l'article de conférence Quantum Permutation Pad avec Qiskit Runtime",
-        "item_2": "Quantum Permutation Pad Corinthians, In: Femmam, S., Lorenz, P. (eds) Avancées récentes dans les réseaux de communication et les systèmes embarqués"
+        "item_2": "Quantum Permutation Pad Corinthians, In: Femmam, S., Lorenz, P. (eds) Avancées récentes dans les réseaux de communication et les systèmes embarqués",
+        "item_3": "Quantum Chemistry and Computing for the Curious: Illustrated with Python and Qiskit® code, Keeper L. Sharkey, Alain Chancé, Packt (2022)"
       },
       "linkedin": "Profil LinkedIn",
       "view_profile": "Voir le profil complet"
