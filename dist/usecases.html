@@ -1,0 +1,545 @@
+<!DOCTYPE html>
+<!-- {% load cms_tags menu_tags sekizai_tags static i18n %} {% load static %} -->
+
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>
+MolKet | Algorithm solutions & cloud-based/software services for molecular
+    modeling, molecular design, quantum molecular sensing and control, and
+    training using hybrid classical/quantum computers
+  </title>
+
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+
+
+  <!--====== Favicon Icon ======-->
+  <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+  <link rel="manifest" href="site.webmanifest">
+
+
+  <!-- Font Awesome -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet" />
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" rel="stylesheet" />
+  <!-- MDB -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.2.0/mdb.min.css" rel="stylesheet" />
+
+  <!-- MDB -->
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.2.0/mdb.min.js"></script>
+
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/styles/default.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/highlight.min.js"></script>
+  <script>hljs.highlightAll();</script>
+
+  <!-- ===== All CSS files ===== -->
+  <link rel="stylesheet" href="css/bootstrap.min.css" />
+  <link rel="stylesheet" href="css/animate.css" />
+  <link rel="stylesheet" href="css/lineicons.css" />
+  <link rel="stylesheet" href="css/ud-styles.css" />
+
+  <!-- {% render_block 'css -->
+</head>
+
+<body>
+  <!-- ====== Header Start ====== -->
+  <!-- {% cms_toolbar %} -->
+
+  <header class="ud-header">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+          <nav class="navbar navbar-expand-lg">
+            <a class="navbar-brand" href="./">
+              <img src="logo_circle-removebg-preview.png" alt="logo" />
+            </a>
+            <button class="navbar-toggler">
+              <span class="toggler-icon"> </span>
+              <span class="toggler-icon"> </span>
+              <span class="toggler-icon"> </span>
+            </button>
+
+            <div class="navbar-collapse">
+              <ul id="nav" class="navbar-nav mx-auto">
+                <li class="nav-item">
+                  <a class="ud-menu-scroll" href="./">Home</a>
+                </li>
+
+                <!-- <li class="nav-item">
+                  <a class="ud-menu-scroll" href="#about">About</a>
+                </li>
+
+                <li class="nav-item">
+                  <a class="ud-menu-scroll" href="#team">Team</a>
+                </li>
+                <li class="nav-item">
+                  <a class="ud-menu-scroll" href="#contact">Contact</a>
+                </li>
+
+                        <li class="nav-item">
+                    <a class="ud-menu-scroll" href="usecases.html">Use Cases</a>
+                  </li> -->
+
+                <li class="nav-item">
+                  <a class="ud-menu-scroll" href="https://github.com/molket-io/molket.jl">Lab </a>
+                </li>
+
+                <li class="nav-item">
+                  <a class="ud-menu-scroll"
+                    href="https://github.com/molket-io/demos">Demo </a>
+                </li>
+
+
+
+                </ul>
+            </div>
+
+          </nav>
+        </div>
+      </div>
+    </div>
+  </header>
+  <!-- ====== Header End ====== -->
+
+
+  <!-- ====== Hero Start ====== -->
+  <section class="ud-hero" id="home">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="ud-hero-content wow fadeInUp" data-wow-delay=".2s">
+            <!-- <h2 class="ud-hero-title">Mol|Ket></h2> -->
+            <img src="logo_circle-removebg-preview.png" alt="logo" />
+            <p class="ud-hero-desc">
+               MolKet offers consulting and AI services for modeling quantum molecular solutions
+               with cloud-based software on hybrid HPC and quantum computing platforms.
+
+<!--               MolKet is a superposition of tech and service offerings.
+
+              It offers a cloud-based Software with Al services and solutions for Molecular modeling & design using
+              quantum & high performance computing. -->
+            </p>
+            <!-- <ul class="ud-hero-buttons">
+                <li>
+                  <a
+                    href="https://1u0ya8k0gol.typeform.com/to/RyIvarq4"
+                    rel="nofollow noopener"
+                    target="_blank"
+                    class="ud-main-btn ud-white-btn"
+                  >
+                    Request a Demo
+                  </a>
+                </li>
+ 
+              </ul> -->
+          </div>
+
+
+  </section>
+  <!-- ====== Hero End ====== -->
+
+
+
+  <!-- ====== About Start ====== -->
+  <section id="about" class="ud-about">
+    <div class="container">
+      <div class="ud-about-wrapper wow fadeInUp" data-wow-delay=".2s">
+        <div class="ud-about-content-wrapper">
+          <h2> <span style="color:#89c6f0;">|</span> Modeling the spectra of JWST <span style="color: #89c6f0;">></span>
+          </h2>
+
+          <div class="container">
+            <div class="row">
+
+              <div style="color: black; margin-top: 10px;" class="col-lg-8">
+
+
+
+                <ul>
+                  <li> • In the PhD projects, Selim contributed to the development of efficient
+computational methods using quantum dynamics to simulate molecular collisions
+in space in protoplanetary disks.</li>
+
+                  <br />
+                  <li> • Such simulations will provide the collision-induced rotational-vibrational transition
+rates needed by the molecular astronomers to interpret the spectra of probe
+molecules in protoplanetary disks. </li>
+                  <br />
+
+
+                </ul>
+
+  </br>
+                <hr>
+
+                <br/>
+                Reference : </br> </br>
+                <a
+                  href="https://pubs.aip.org/aip/jcp/article/155/3/034105/200835/Multi-channel-distorted-wave-Born-approximation">  • Multi-channel distorted-wave Born approximation for rovibrational transition rates in molecular collisions
+                </a> 
+
+                </br> </br>
+                 <a
+                  href="https://pubs.aip.org/aip/jcp/article/157/6/064105/2841671/Efficient-computational-methods-for-rovibrational"> • Efficient computational methods for rovibrational transition rates in molecular collisions
+                </a>
+
+              </div>
+
+              <div class="col-lg-4">
+                <img src="Screenshot 2023-05-15 at 2.27.03 PM.png" alt="logo" />
+              </div>
+
+            </div>
+          </div>
+
+
+        </div>
+
+      </div>
+    </div>
+  </section>
+  <!-- ====== About End ====== -->
+
+  <section id="about" class="ud-about">
+    <div class="container">
+      <div class="ud-about-wrapper wow fadeInUp" data-wow-delay=".2s">
+        <div class="ud-about-content-wrapper">
+          <h2> <span style="color:#89c6f0;">|</span> Reducing chemical waste <span style="color: #89c6f0;">></span>
+          </h2>
+
+          <div class="container">
+            <div class="row">
+
+              <div style="color: black; margin-top: 10px;" class="col-lg-8">
+
+
+                <h4 style="color: darkred; margin-bottom: 10px;">For a personal care company:</h4>
+
+
+                <ul>
+                  <li> • A contribution to a theoretical modelling of using quantum control for chemical
+                    reactions.</li>
+
+                  <br />
+                  <li> • Such theoretical study contributed to paving the way for designing the parameters
+                    of femto/atto-second laser pulses that can control the chemical reactions.</li>
+                  <br />
+
+                  <li> • Such engineered pulse will select the favorable product channel resulting in
+                    reducing the chemical & material waste</li>
+                </ul>
+
+
+                </br>
+                <hr>
+
+                <br/>
+                Reference : </br> </br>
+                 <a
+                  href="https://www.researchgate.net/publication/318009556_Control_of_Quantum_Interference_in_Molecular_Processes"> • Control
+                  of Quantum Interference in Molecular Processes.
+                </a>
+              </div>
+
+              <div class="col-lg-4">
+                <img src="Screenshot 2023-05-15 at 2.14.35 PM.png" alt="logo" />
+              </div>
+
+            </div>
+          </div>
+
+
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+ <!-- ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++     -->
+  <section id="about" class="ud-about">
+    <div class="container">
+      <div class="ud-about-wrapper wow fadeInUp" data-wow-delay=".2s">
+        <div class="ud-about-content-wrapper">
+          <h2> <span style="color:#89c6f0;">|</span> 
+            Quantum molecular simulations are computationally challenging  <span style="color: #89c6f0;">></span>
+          </h2>
+
+          <div class="container">
+            <div class="row">
+
+              <div style="color: black; margin-top: 10px;" class="col-lg-8">
+
+                <!-- 
+                <h4 style="color: darkred; margin-bottom: 10px;">For a personal care company:</h4>
+                -->
+
+                <ul>
+                  <li> • Quantum molecular simulations are important to 
+                    simulate quantum molecular sensors, chemical reactions, controlled molecular 
+                    processes, molecular collisions, molecular interactions, and molecular design. 
+                    </li>
+
+                  <br />
+                  <li> • Quantum molecular simulations are computationally challenging. 
+                    </li>
+                  <br />
+
+                  <li> • Example: the time-independent solution of Schrödinger's equation, 
+                    called coupled-channels (CC) method.
+                  </li>
+                </ul>
+
+
+                </br>
+                <hr>
+
+                <br/>
+                <!--
+                Reference : </br> </br>
+                 <a
+                  href="https://www.researchgate.net/publication/318009556_Control_of_Quantum_Interference_in_Molecular_Processes"> • Control
+                  of Quantum Interference in Molecular Processes.
+                </a>
+                -->
+              </div>
+              
+              <div class="col-lg-4">
+                <img src="CC_matrix.png" alt="logo" />
+              </div>
+              
+            </div>
+          </div>
+
+
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+
+  <section id="about" class="ud-about">
+    <div class="container">
+      <div class="ud-about-wrapper wow fadeInUp" data-wow-delay=".2s">
+        <div class="ud-about-content-wrapper">
+          <h2> <span style="color:#89c6f0;">|</span> 
+            Computation time scales cubically with the number of 
+            equations being solved  <span style="color: #89c6f0;">></span>
+          </h2>
+
+          <div class="container">
+            <div class="row">
+
+              <div style="color: black; margin-top: 10px;" class="col-lg-8">
+
+                <!--
+                <h4 style="color: darkred; margin-bottom: 10px;">For a personal care company:</h4>
+                -->
+
+                <ul>
+                  <li> • Solving the time-independent Schrödinger equation scales 
+                    cubically with the number of equations being solved.
+                  </li>
+
+                  <br />
+                  <li> • Such theoretical study contributed to paving the way for designing the parameters
+                    of femto/atto-second laser pulses that can control the chemical reactions.</li>
+                  <br />
+
+                  <li> • An efficient quantum simulation engine is needed to 
+                    overcome this computational complexity challenge.
+                  </li>
+                  <br/>  
+                  <br/>  
+                  <li> • The plot on the right is made by fitting three data 
+                    points using 3rd degree polynomial for the data mentioned in the 
+                    following published paper:  
+                    <br/>  
+                    Selim et al., J. Chem. Phys. 157, 064105 (2022) 
+                  <br/>
+                    <a
+                  href="https://arxiv.org/abs/2206.04470">
+                   • arXiv: 2206.04470
+                </a>
+                <br/>
+                <a
+                href="https://doi.org/10.1063/5.0102224">
+                • JCP: 10.1063/5.0102224
+              </a>
+                  </li>
+                </ul>
+
+
+                </br>
+                <hr>
+                <!--
+                <br/>
+                Reference : </br> </br>
+                 <a
+                  href="https://www.researchgate.net/publication/318009556_Control_of_Quantum_Interference_in_Molecular_Processes"> • Control
+                  of Quantum Interference in Molecular Processes.
+                </a>
+                -->
+
+              </div>
+
+              <div class="col-lg-4">
+                <img src="com_complexity_screenshot.png" alt="logo" />
+                <br/>
+                <img src="fig1.jpg" alt="logo" />
+              </div>
+
+            </div>
+          </div>
+
+
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ====== Footer Start ====== -->
+  <footer class="ud-footer wow fadeInUp" data-wow-delay=".15s">
+
+    <div class="ud-footer-widgets">
+      <div class="container">
+        <div class="row">
+          <div class="col-xl-12 col-lg-12 col-md-6">
+            <div class="ud-widget">
+              <a href="index.html" class="ud-footer-logo">
+                <img src="logo_circle-removebg-preview.png" alt="logo" />
+              </a>
+              <p>
+                MolKet offers cloud software services to develop and perform molecular design and
+                simulations using hybrid quantum and high-performance computing enabled, assisted,
+                optimized, and automated by AI
+              </p>
+
+            </div>
+          </div>
+        </div>
+
+                 <div class="row">
+            <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6">
+              <div class="ud-widget">
+                <a class="ud-menu-scroll" href="#about" style="color: white; text-decoration: underline;" >Features</a>
+
+              </div>
+              </div>
+
+              <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6">
+                <div class="ud-widget">
+                  <a class="ud-menu-scroll" href="#about" style="color: white; text-decoration: underline;">How it works</a>
+  
+                </div>
+                </div>
+  
+
+              <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6">
+                <div class="ud-widget">
+                  <a href="pp.html" style="color: white; text-decoration: underline;">Legal Notice</a>
+  
+                </div>
+                </div>
+
+                <!-- <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6">
+                  <div class="ud-widget">
+                    <a href="tc.html" style="color: white; text-decoration: underline;">Terms of service</a>
+    
+                  </div>
+                </div> -->
+              </div>
+
+
+
+      </div>
+    </div>
+    </div>
+    </div>
+    </div>
+  </footer> </i>
+
+  <!-- ====== Footer End ====== -->
+
+
+  <!-- ====== Back To Top Start ====== -->
+  <a href="javascript:void(0)" class="back-to-top">
+    <i class="lni lni-chevron-up"> </i>
+  </a>
+  <!-- ====== Back To Top End ====== -->
+
+  <!-- ====== All Javascript Files ====== -->
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <script src="js/wow.min.js"></script>
+  <script src="js/main.js"></script>
+  <script>
+    // ==== for menu scroll
+    const pageLink = document.querySelectorAll(".ud-menu-scroll");
+
+    pageLink.forEach((elem) => {
+      elem.addEventListener("click", (e) => {
+        e.preventDefault();
+        if(elem.getAttribute("href").startsWith("#")) {
+        document.querySelector(elem.getAttribute("href")).scrollIntoView({
+          behavior: "smooth",
+          offsetTop: 1 - 60,
+        });
+
+      }else{
+
+        window.location = elem.getAttribute("href");
+      }
+        
+      });
+    });
+
+    // section menu active
+    function onScroll(event) {
+      const sections = document.querySelectorAll(".ud-menu-scroll");
+      const scrollPos =
+        window.pageYOffset ||
+        document.documentElement.scrollTop ||
+        document.body.scrollTop;
+
+      for (let i = 0; i < sections.length; i++) {
+        const currLink = sections[i];
+        const val = currLink.getAttribute("href");
+        const refElement = document.querySelector(val);
+        const scrollTopMinus = scrollPos + 73;
+        if (
+          refElement.offsetTop <= scrollTopMinus &&
+          refElement.offsetTop + refElement.offsetHeight > scrollTopMinus
+        ) {
+          document
+            .querySelector(".ud-menu-scroll")
+            .classList.remove("active");
+          currLink.classList.add("active");
+        } else {
+          currLink.classList.remove("active");
+        }
+      }
+    }
+
+      // window.document.addEventListener("scroll", onScroll);
+  </script>
+
+
+
+
+
+</body>
+
+</html>

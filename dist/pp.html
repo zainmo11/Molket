@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<!-- {% load cms_tags menu_tags sekizai_tags static i18n %} {% load static %} -->
+
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>
+      MolKet | Algorithm solutions & cloud-based/software services for molecular
+    modeling, molecular design, quantum molecular sensing and control, and
+    training using hybrid classical/quantum computers
+    </title>
+
+    <!--====== Favicon Icon ======-->
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+    <link rel="manifest" href="site.webmanifest">
+    
+
+    <!-- Font Awesome -->
+<link
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+rel="stylesheet"
+/>
+<!-- Google Fonts -->
+<link
+href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap"
+rel="stylesheet"
+/>
+<!-- MDB -->
+<link
+href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.2.0/mdb.min.css"
+rel="stylesheet"
+/>
+
+<!-- MDB -->
+<script
+  type="text/javascript"
+  src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.2.0/mdb.min.js"
+></script>
+
+
+<link rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/styles/default.min.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/highlight.min.js"></script>
+<script>hljs.highlightAll();</script>
+
+    <!-- ===== All CSS files ===== -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/animate.css" />
+    <link rel="stylesheet" href="css/lineicons.css" />
+    <link rel="stylesheet" href="css/ud-styles.css" />
+
+    <!-- {% render_block 'css -->
+  </head>
+  <body>
+    <!-- ====== Header Start ====== -->
+    <!-- {% cms_toolbar %} -->
+
+    <header class="ud-header">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12">
+            <nav class="navbar navbar-expand-lg">
+              <a class="navbar-brand" href="./">
+                <img src="/logo_circle-removebg-preview.png" alt="logo" />
+              </a>
+              <button class="navbar-toggler">
+                <span class="toggler-icon"> </span>
+                <span class="toggler-icon"> </span>
+                <span class="toggler-icon"> </span>
+              </button>
+
+              <div class="navbar-collapse">
+                <ul id="nav" class="navbar-nav mx-auto">
+                  <li class="nav-item">
+                    <a class="ud-menu-scroll" href="./">Home</a>
+                  </li>
+
+                  <!-- <li class="nav-item">
+                    <a class="ud-menu-scroll" href="#about">About</a>
+                  </li>
+                
+                  <li class="nav-item">
+                    <a class="ud-menu-scroll" href="#team">Team</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="ud-menu-scroll" href="#contact">Contact</a>
+                  </li> -->
+ 
+                  <li class="nav-item">
+                    <a class="ud-menu-scroll" href="usecases.html">Use Cases</a>
+                  </li>
+  
+                  <li class="nav-item">
+                    <a class="ud-menu-scroll" href="https://github.com/molket-io/molket.jl">Lab </a>
+                  </li>
+
+                  <li class="nav-item">
+                    <a class="ud-menu-scroll" href="https://demos.molket.io/github/MohammedRashad/molket-demo/tree/main/">Demo </a>
+                  </li>
+                </ul>
+              </div>
+             </nav>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- ====== Header End ====== -->
+
+   
+    <!-- ====== Hero Start ====== -->
+    <section class="ud-hero" id="home">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12">
+            <div class="ud-hero-content wow fadeInUp" data-wow-delay=".2s">
+              <!-- <h5 class="ud-hero-title">Mol|Ket></h5> -->
+              <img src="/logo_circle-removebg-preview.png" alt="logo" />
+              <p class="ud-hero-desc">
+                MolKet offers management consulting and AI services for:
+                <br />
+                - quantum molecular dynamics,
+                <br />
+                - cryptography,
+                <br />
+                - neuromorphic-based computing
+                <br />
+            with cloud-based hybrid HPC & quantum computing platforms.
+              </p>
+              <!-- <ul class="ud-hero-buttons">
+                <li>
+                  <a
+                    href="https://1u0ya8k0gol.typeform.com/to/RyIvarq4"
+                    rel="nofollow noopener"
+                    target="_blank"
+                    class="ud-main-btn ud-white-btn"
+                  >
+                    Request a Demo
+                  </a>
+                </li>
+ 
+              </ul> -->
+            </div>
+
+
+    </section>
+    <!-- ====== Hero End ====== -->
+
+
+
+    <!-- ====== About Start ====== -->
+    <section id="about" class="ud-about">
+      <div class="container">
+        <div class="ud-about-wrapper wow fadeInUp" data-wow-delay=".2s">
+          <div class="ud-about-content-wrapper">
+            <!-- <div class="ud-about-content"> -->
+              <!-- <span class="tag">About Us</span> -->
+
+              <h4>Mentions légales</h4>
+              
+              <br/>
+              <h6> Éditeur  </h6>
+              <p>Conformément aux dispositions de l’article 6-I 1° de la loi n° 2004-575 du 21 juin 2004 relative à la confiance dans l’économie numérique, l’éditeur du site web <A HREF="https://molket.io" target="_blank"> www.molket.io</A> est : 
+                <br/>
+                MOLKET, société par actions simplifiée, au capital de 1 000,00 euros, immatriculée au registre du commerce et des sociétés de Paris, sous le numéro 932 560 204, dont le siège social est situé 38, rue des Mathurins, 75008 Paris. 
+                <br/>
+                Numéro de téléphone : 01 42 65 28 27 
+                <br/>
+                Adresse électronique : contact@molket.io </p>
+              
+              <br/>
+
+              <h6> Directeur de la publication   </h6>
+
+              <p>
+            Le directeur de la publication du site web <A HREF="https://molket.io" target="_blank"> www.molket.io</A> 
+            est Taha Selim, 
+            en qualité de Directeur Général de MOLKET.                             
+            </p>
+            <br/>
+            <h6> Hébergement    </h6>
+
+            <p>
+              Le prestataire assurant le stockage direct et permanent du site <A HREF="https://molket.io" target="_blank"> www.molket.io</A>
+              est la société DigitalOcean LLC dont le siège social est à New York, NY 10013, Etats-Unis dont le numéro 
+              TVA est EU528002224. Site web: <A HREF="https://cloud.digitalocean.com" target="_blank"> 
+                https://cloud.digitalocean.com</A>. 
+              <br/>
+            </p>
+            <br/><br/><br/><br/>
+
+            <h4>Legal Notices </h4>
+            <br/>
+          <p>
+            MOLKET SAS 
+            <br/>
+            SIRET: 932 560 204 00012 
+            <br/>
+            SIREN: 932 560 204 
+            <br/>
+            NAFE/APE: 70.22Z – Conseil pour les affaires et autres conseils de gestion 
+            <br/>
+            R.C.S: Paris 
+            <br/>
+            VAT NUMBER: FR 2893 2560 204 
+            <br/>
+            Legal Status: Société par Actions Simplifiée (Simplified Joint-Stock Company) 
+            <br/>
+            Creation date: 06 August 2024 
+            <br/>
+          </p>
+            <!-- </div> -->
+          </div>
+
+        </div>
+      </div>
+    </section>
+    <!-- ====== About End ====== -->
+
+
+
+
+  
+    <!-- ====== Footer Start ====== -->
+    <footer class="ud-footer wow fadeInUp" data-wow-delay=".15s">
+   
+      <div class="ud-footer-widgets">
+        <div class="container">
+          <div class="row">
+            <div class="col-xl-12 col-lg-12 col-md-6">
+              <div class="ud-widget">
+                <a href="" class="ud-footer-logo">
+                  <img src="./logo_circle-removebg-preview.png" alt="logo" />
+                </a>
+                <p>
+                  MolKet | Algorithm solutions & cloud-based/software services for molecular
+                  modeling, molecular design, quantum molecular sensing and control, and
+                   training using hybrid classical/quantum computers
+                </p>
+ 
+              </div>
+            </div>
+          </div>
+
+        <div class="row">
+          <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6">
+            <div class="ud-widget">
+              <a class="ud-menu-scroll" href="#about" style="color: white; text-decoration: underline;">Features</a>
+
+            </div>
+          </div>
+
+          <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6">
+            <div class="ud-widget">
+              <a class="ud-menu-scroll" href="#about" style="color: white; text-decoration: underline;">How it works</a>
+
+            </div>
+          </div>
+
+
+          <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6">
+            <div class="ud-widget">
+              <a href="pp.html" style="color: white; text-decoration: underline;">Mentions légales </a>
+
+            </div>
+          </div>
+<!-- 
+          <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6">
+            <div class="ud-widget">
+              <a href="tc.html" style="color: white; text-decoration: underline;">Terms of service</a>
+
+            </div>
+          </div>
+        </div> -->
+
+
+            
+         
+        </div>
+      </div>
+          </div>
+        </div>
+      </div>
+    </footer> </i>
+
+    <!-- ====== Footer End ====== -->
+
+    <!-- ====== Back To Top Start ====== -->
+    <a href="javascript:void(0)" class="back-to-top">
+      <i class="lni lni-chevron-up"> </i>
+    </a>
+    <!-- ====== Back To Top End ====== -->
+
+    <!-- ====== All Javascript Files ====== -->
+    <script src="/js/bootstrap.bundle.min.js"></script>
+    <script src="/js/wow.min.js"></script>
+    <script src="/js/main.js"></script>
+    <script>
+      // ==== for menu scroll
+      const pageLink = document.querySelectorAll(".ud-menu-scroll");
+
+      pageLink.forEach((elem) => {
+        elem.addEventListener("click", (e) => {
+          e.preventDefault();
+        
+          if(elem.getAttribute("href").startsWith("#")) {
+        document.querySelector(elem.getAttribute("href")).scrollIntoView({
+          behavior: "smooth",
+          offsetTop: 1 - 60,
+        });
+
+      }else{
+
+        window.location = elem.getAttribute("href");
+      }
+
+        });
+      });
+
+      // section menu active
+      function onScroll(event) {
+        const sections = document.querySelectorAll(".ud-menu-scroll");
+        const scrollPos =
+          window.pageYOffset ||
+          document.documentElement.scrollTop ||
+          document.body.scrollTop;
+
+        for (let i = 0; i < sections.length; i++) {
+          const currLink = sections[i];
+          const val = currLink.getAttribute("href");
+          const refElement = document.querySelector(val);
+          const scrollTopMinus = scrollPos + 73;
+          if (
+            refElement.offsetTop <= scrollTopMinus &&
+            refElement.offsetTop + refElement.offsetHeight > scrollTopMinus
+          ) {
+            document
+              .querySelector(".ud-menu-scroll")
+              .classList.remove("active");
+            currLink.classList.add("active");
+          } else {
+            currLink.classList.remove("active");
+          }
+        }
+      }
+
+      // window.document.addEventListener("scroll", onScroll);
+    </script>
+
+<!-- Cookie Consent by TermsFeed https://www.TermsFeed.com -->
+<script type="text/javascript" src="https://www.termsfeed.com/public/cookie-consent/4.1.0/cookie-consent.js" charset="UTF-8"></script>
+<!--<script type="text/javascript" charset="UTF-8">-->
+<!--document.addEventListener('DOMContentLoaded', function () {-->
+<!--cookieconsent.run({"notice_banner_type":"headline","consent_type":"express","palette":"light","language":"en","page_load_consent_levels":["strictly-necessary"],"notice_banner_reject_button_hide":false,"preferences_center_close_button_hide":false,"page_refresh_confirmation_buttons":false,"website_name":"MolKet"});-->
+<!--});-->
+<!--</script>-->
+
+
+<script>
+  // Get the text container and cursor elements
+  const textContainer = document.querySelector('.text-container');
+
+
+  const cursor = document.querySelector('.cursor');
+
+  // Get the text content from the container and split it into an array of lines
+  const text =   `
+import molket_engine as me 
+import molket_visual as mv 
+import molket_data as md 
+
+# def the molecular structure 
+# insert h6 molecule
+molecule = me.Molecule('H_2')
+# define the geometry of the molecule: example h6
+molecule.geometry = [('H', (0, 0, 0)), ('H', (0, 0, 0.74))]
+# you can also define a grid of points to sample the wavefunction
+r = [0.5,0.6, 0.7, 0.8, 0.9, 1.0, 1.1, 1.2,1.3,1.4,1.5,1.6,
+1.7,1.8,1.9,2] # in Angstrom
+molecule.geometry = [('H', (0, 0, -r/2)), ('H', (0, 0, r/2))]
+# create the Hamiltonian operator with the molecule and data structure 
+H_op = me.Operator('H_2')
+H_op.molecule = molecule
+# define the electronic basis set
+H_op.elec_basis = 'sto-3g'
+# define the nuclear motion basis set, the vibrational basis set
+H_op.nuc_basis = ('harmonic','Gaussian')
+# define the rotational basis set (wavefunctions), ...
+# Default: spherical harmonics for linear molecules, and Wigner D-matrices for non-linear molecules.
+H_op.rot_basis = ('Ylm')
+# you can also define phase or choose real harmonics depending on the symmetry of the molecule
+
+# Define the chips for the computing part: the choice of the hardware and the backend
+H_op.Qchip = 'Qqx2' ## variations of Qqx4: Qqx2, Qqx3, Qqx4, Qqx5, Qqx20, Qqx_qasm_simulator
+## accelerated computing with GPU
+H_op.HPCchip = 'GPU'
+# choose the simulators for the quantum and HPC backends, to be used in analysis as well 
+H_op.Qbackend = 'statevector_simulator'
+H_op.HPCbackend = 'local_qasm_simulator'
+vib_groundstate_energy= H_op.vib_eigE('0','groundstate')
+vib_WF0 = H_op.vib_eigW('0','groundstate')
+
+
+#H = H_vib + H_rot + H_elec + H_nuc
+
+`;
+  console.log(text);
+  const lines = text.split('\n');
+
+  console.log(lines);
+  // Set up a variable to keep track of the current line and character position
+  let lineIndex = 0;
+  let charIndex = 0;
+
+  // Set up a function to type out each line of text
+  function typeLine() {
+    // Get the current line of text
+    const line = lines[lineIndex];
+
+    // Type out the current character
+    textContainer.textContent += line.charAt(charIndex);
+
+    // Increment the character index
+    charIndex++;
+
+    // If we've typed out the entire line, move on to the next one
+    if (charIndex > line.length) {
+      lineIndex++;
+      charIndex = 0;
+      textContainer.innerHTML += '\n';
+    }
+
+    // If we've typed out all the lines, stop the animation
+    if (lineIndex >= lines.length) {
+      clearInterval(intervalId);
+    }
+  }
+
+  // Set up an interval to type out the text
+  const intervalId = setInterval(typeLine, 50);
+</script>
+
+
+
+
+<!-- <noscript>Free cookie consent management tool by <a href="https://www.termsfeed.com/">TermsFeed</a></noscript> -->
+<!-- End Cookie Consent by TermsFeed https://www.TermsFeed.com -->
+
+
+<!-- Below is the link that users can use to open Preferences Center to change their preferences. Do not modify the ID parameter. Place it where appropriate, style it as needed. -->
+
+<!-- <a href="#" id="open_preferences_center">Update cookies preferences</a> -->
+  </body>
+</html>

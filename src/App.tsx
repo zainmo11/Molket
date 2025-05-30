@@ -60,8 +60,8 @@ function App() {
             <Hero />
             <About />
             <Services />
-            <HowItWorks />
             <Videos />
+            <HowItWorks />
             <Model />
             <Team />
             <Contact />

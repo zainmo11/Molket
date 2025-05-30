@@ -26,7 +26,7 @@ const Navbar: React.FC = () => {
 
   const resourceLinks = [
     { key: 'navbar.resources_menu.use_cases', href: 'usecases.html' },
-    { key: 'navbar.resources_menu.lab', href: 'http://jupyterhub.molket.io' },
+    { key: 'navbar.resources_menu.lab', href: 'https://github.com/molket-io/molket.jl' },
     { key: 'navbar.resources_menu.molket_jl', href: 'https://github.com/molket-io/molket.jl/tree/main/examples' },
   ];
 
