@@ -22,7 +22,7 @@ const Contact: React.FC = () => {
           </motion.div>
 
           <div className="max-w-5xl mx-auto">
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
               {/* Location Card */}
               <motion.div
                   className="bg-gray-800 rounded-lg p-8 text-center"
@@ -69,19 +69,19 @@ const Contact: React.FC = () => {
               </motion.div>
 
               {/* Phone Card */}
-              <motion.div
-                  className="bg-gray-800 rounded-lg p-8 text-center"
-                  initial={{ opacity: 0, y: 30 }}
-                  whileInView={{ opacity: 1, y: 0 }}
-                  viewport={{ once: true }}
-                  transition={{ duration: 0.6, delay: 0.4 }}
-              >
-                <div className="w-16 h-16 mx-auto bg-blue-600/20 rounded-full flex items-center justify-center text-blue-500 mb-6">
-                  <Phone className="w-8 h-8" />
-                </div>
-                <h3 className="text-xl font-bold mb-4">{t('contact.phone.title')}</h3> {/* Localized heading */}
-                <p className="text-gray-300">{t('contact.phone.number')}</p> {/* Localized phone number */}
-              </motion.div>
+              {/*<motion.div*/}
+              {/*    className="bg-gray-800 rounded-lg p-8 text-center"*/}
+              {/*    initial={{ opacity: 0, y: 30 }}*/}
+              {/*    whileInView={{ opacity: 1, y: 0 }}*/}
+              {/*    viewport={{ once: true }}*/}
+              {/*    transition={{ duration: 0.6, delay: 0.4 }}*/}
+              {/*>*/}
+              {/*  <div className="w-16 h-16 mx-auto bg-blue-600/20 rounded-full flex items-center justify-center text-blue-500 mb-6">*/}
+              {/*    <Phone className="w-8 h-8" />*/}
+              {/*  </div>*/}
+              {/*  <h3 className="text-xl font-bold mb-4">{t('contact.phone.title')}</h3> /!* Localized heading *!/*/}
+              {/*  <p className="text-gray-300">{t('contact.phone.number')}</p> /!* Localized phone number *!/*/}
+              {/*</motion.div>*/}
             </div>
 
             {/* Request a Demo Button */}
