@@ -1,10 +1,23 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { MapPin, Mail, Phone } from 'lucide-react';
-import { useTranslation } from 'react-i18next'; // Import i18n hook
+import { MapPin, Mail } from 'lucide-react';
+import { useTranslation } from 'react-i18next';
+import { MapContainer, TileLayer, Marker, Popup } from 'react-leaflet';
+import 'leaflet/dist/leaflet.css';
+import L from 'leaflet';
+
+// Fix Leaflet marker icon issue
+import iconUrl from 'leaflet/dist/images/marker-icon.png';
+import shadowUrl from 'leaflet/dist/images/marker-shadow.png';
+L.Marker.prototype.options.icon = new L.Icon({
+  iconUrl,
+  shadowUrl,
+  iconSize: [25, 41],
+  iconAnchor: [12, 41],
+});
 
 const Contact: React.FC = () => {
-  const { t } = useTranslation(); // Initialize translation functionality
+  const { t } = useTranslation();
 
   return (
       <section id="contact" className="py-20 bg-gray-900 text-white">
@@ -16,8 +29,8 @@ const Contact: React.FC = () => {
               viewport={{ once: true }}
               transition={{ duration: 0.8 }}
           >
-            <h2 className="text-3xl md:text-4xl font-bold mb-4">{t('contact.title')}</h2> {/* Localized title */}
-            <p className="text-lg text-gray-300">{t('contact.description')}</p> {/* Localized description */}
+            <h2 className="text-3xl md:text-4xl font-bold mb-4">{t('contact.title')}</h2>
+            <p className="text-lg text-gray-300">{t('contact.description')}</p>
             <div className="h-1 w-20 bg-blue-500 mx-auto mt-6"></div>
           </motion.div>
 
@@ -26,36 +39,38 @@ const Contact: React.FC = () => {
               {/* Location Card */}
               <motion.div
                   className="bg-gray-800 rounded-lg p-8 text-center"
-                  initial={{ opacity: 0, y: 30 }}
-                  whileInView={{ opacity: 1, y: 0 }}
-                  viewport={{ once: true }}
-                  transition={{ duration: 0.6 }}
+                  initial={{opacity: 0, y: 30}}
+                  whileInView={{opacity: 1, y: 0}}
+                  viewport={{once: true}}
+                  transition={{duration: 0.6}}
               >
-                <div className="w-16 h-16 mx-auto bg-blue-600/20 rounded-full flex items-center justify-center text-blue-500 mb-6">
-                  <MapPin className="w-8 h-8" />
+                <div
+                    className="w-16 h-16 mx-auto bg-blue-600/20 rounded-full flex items-center justify-center text-blue-500 mb-6">
+                  <MapPin className="w-8 h-8"/>
                 </div>
-                <h3 className="text-xl font-bold mb-4">{t('contact.location.title')}</h3> {/* Localized heading */}
-                <p className="text-gray-300">{t('contact.location.address')}</p> {/* Localized address */}
+                <h3 className="text-xl font-bold mb-4">{t('contact.location.title')}</h3>
+                <p className="text-gray-300 mb-6">{t('contact.location.address')}</p>
               </motion.div>
 
               {/* Email Card */}
               <motion.div
                   className="bg-gray-800 rounded-lg p-8 text-center"
-                  initial={{ opacity: 0, y: 30 }}
-                  whileInView={{ opacity: 1, y: 0 }}
-                  viewport={{ once: true }}
-                  transition={{ duration: 0.6, delay: 0.2 }}
+                  initial={{opacity: 0, y: 30}}
+                  whileInView={{opacity: 1, y: 0}}
+                  viewport={{once: true}}
+                  transition={{duration: 0.6, delay: 0.2}}
               >
-                <div className="w-16 h-16 mx-auto bg-blue-600/20 rounded-full flex items-center justify-center text-blue-500 mb-6">
-                  <Mail className="w-8 h-8" />
+                <div
+                    className="w-16 h-16 mx-auto bg-blue-600/20 rounded-full flex items-center justify-center text-blue-500 mb-6">
+                  <Mail className="w-8 h-8"/>
                 </div>
-                <h3 className="text-xl font-bold mb-4">{t('contact.email.title')}</h3> {/* Localized heading */}
+                <h3 className="text-xl font-bold mb-4">{t('contact.email.title')}</h3>
                 <p className="text-gray-300 mb-2">
                   <a
                       href={`mailto:${t('contact.email.contact_email')}`}
                       className="hover:text-blue-400 transition-colors duration-300"
                   >
-                    {t('contact.email.contact_email')} {/* Localized contact email */}
+                    {t('contact.email.contact_email')}
                   </a>
                 </p>
                 <p className="text-gray-300">
@@ -63,34 +78,20 @@ const Contact: React.FC = () => {
                       href={`mailto:${t('contact.email.business_email')}`}
                       className="hover:text-blue-400 transition-colors duration-300"
                   >
-                    {t('contact.email.business_email')} {/* Localized business email */}
+                    {t('contact.email.business_email')}
                   </a>
                 </p>
               </motion.div>
-
-              {/* Phone Card */}
-              {/*<motion.div*/}
-              {/*    className="bg-gray-800 rounded-lg p-8 text-center"*/}
-              {/*    initial={{ opacity: 0, y: 30 }}*/}
-              {/*    whileInView={{ opacity: 1, y: 0 }}*/}
-              {/*    viewport={{ once: true }}*/}
-              {/*    transition={{ duration: 0.6, delay: 0.4 }}*/}
-              {/*>*/}
-              {/*  <div className="w-16 h-16 mx-auto bg-blue-600/20 rounded-full flex items-center justify-center text-blue-500 mb-6">*/}
-              {/*    <Phone className="w-8 h-8" />*/}
-              {/*  </div>*/}
-              {/*  <h3 className="text-xl font-bold mb-4">{t('contact.phone.title')}</h3> /!* Localized heading *!/*/}
-              {/*  <p className="text-gray-300">{t('contact.phone.number')}</p> /!* Localized phone number *!/*/}
-              {/*</motion.div>*/}
             </div>
+
 
             {/* Request a Demo Button */}
             <motion.div
                 className="mt-16 text-center"
-                initial={{ opacity: 0, y: 30 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ duration: 0.8 }}
+                initial={{opacity: 0, y: 30}}
+                whileInView={{opacity: 1, y: 0}}
+                viewport={{once: true}}
+                transition={{duration: 0.8}}
             >
               <a
                   href="https://1u0ya8k0gol.typeform.com/to/RyIvarq4"
@@ -98,7 +99,7 @@ const Contact: React.FC = () => {
                   target="_blank"
                   className="inline-block px-8 py-4 bg-gradient-to-r from-blue-600 to-indigo-600 rounded-full text-white font-medium hover:from-blue-700 hover:to-indigo-700 transition-colors duration-300 shadow-lg hover:shadow-xl transform hover:scale-105 transition-transform"
               >
-                {t('contact.request_demo')} {/* Localized button label */}
+                {t('contact.request_demo')}
               </a>
             </motion.div>
           </div>
