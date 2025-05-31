@@ -52,6 +52,7 @@ const About: React.FC = () => {
                     src="./deck_general_compact_new.004.jpeg"
                     alt="MolKet Services"
                     className="w-full h-auto object-contain"
+                    loading="lazy"
                 />
               </motion.div>
             </div>

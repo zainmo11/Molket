@@ -22,6 +22,7 @@ const Footer: React.FC = () => {
                     src="/logo.png"
                     alt={t('navbar.logo')} // Localized alt text
                     className="h-12 w-auto mr-3"
+                    loading="lazy"
                 />
                 {/* Optionally, display the translated brand name */}
                 {/* <span className="text-2xl font-bold">{t('navbar.logo')}</span> */}

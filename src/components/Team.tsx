@@ -139,6 +139,7 @@ const Team: React.FC = () => {
                         src={member.image}
                         alt={member.name}
                         className="rounded-full h-40 w-40 object-cover border-4 border-white shadow-lg"
+                        loading="lazy"
                     />
                   </div>
 

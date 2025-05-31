@@ -45,7 +45,7 @@ const Navbar: React.FC = () => {
             {/* Logo Section */}
             <div className="flex items-center md:mt-0">
               <a href="#home" className="flex items-center">
-                <img src="/logo.png" alt="MolKet Logo" className="h-7 w-auto"/>
+                <img src="/logo.png" alt="MolKet Logo" className="h-7 w-auto" loading="lazy"/>
               </a>
             </div>
 
