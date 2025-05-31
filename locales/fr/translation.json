@@ -2,157 +2,159 @@
   "navbar": {
     "logo": "MolKet",
     "home": "Accueil",
-    "about": "À propos",
+    "about": "À Propos",
     "services": "Services",
-    "how_it_works": "Comment ça marche",
+    "how_it_works": "Fonctionnement",
     "team": "Équipe",
     "contact": "Contact",
     "resources": "Ressources",
     "resources_menu": {
-      "use_cases": "Cas d'utilisation",
+      "use_cases": "Cas d'Utilisation",
       "lab": "Laboratoire",
       "molket_jl": "MolKet.jl"
     }
   },
   "home": {
-    "title": "Solutions quantiques de nouvelle génération",
-    "description": "MolKet propose des services de conseil en gestion et d'intelligence artificielle pour :",
+    "title": "Solutions Quantiques de Nouvelle Génération",
+    "description": "MolKet propose des services de conseil en management et d'IA pour :",
     "services_list": {
       "quantum_molecular_dynamics": "Dynamique moléculaire quantique",
       "cryptography": "Cryptographie",
-      "neuromorphic_computing": "Calcul basé sur le neuromorphisme"
+      "neuromorphic_computing": "Calcul neuromorphique"
     },
-    "support_text": "Soutenu par des plateformes de calcul hybride HPC et quantique basées sur le cloud, permettant le développement d'algorithmes d'apprentissage automatique avancés avec un pouvoir prédictif significatif.",
-    "request_demo": "Demander une démo",
-    "explore_services": "Découvrir nos services",
-    "scroll_down": "Faire défiler vers le bas"
+    "support_text": "Ces services sont supportés par des plateformes de calcul hybrides HPC et quantiques basées sur le cloud, permettant le développement d'algorithmes avancés d'apprentissage automatique avec un pouvoir prédictif significatif.",
+    "request_demo": "Demander une Démonstration",
+    "explore_services": "Découvrir nos Services",
+    "scroll_down": "Faire Défiler"
   },
   "about": {
-    "title": "À propos de MolKet",
+    "title": "À Propos de MolKet",
     "subtitle": "Simulations de conception moléculaire rapides et précises assistées par l'IA",
-    "description_1": "Les simulations chimiques sont longues et complexes à préparer. Notre objectif est de rendre le processus de conception plus simple et rapide. Nous utilisons l'IA pour entraîner des hamiltoniens généraux pour les simulations chimiques, qui peuvent être exécutés efficacement sur des HPC, des ordinateurs quantiques et des simulations d'ordinateurs quantiques.",
-    "description_2": "L'entreprise propose également des services de conseil pour l'entraînement de l'IA sur des ensembles de données issus de domaines tels que la chimie, la biologie, la science des matériaux et la cosmologie. Ces services sont soutenus par des noyaux basés sur la physique (par exemple, des noyaux quantiques-mécaniques), permettant le développement d'algorithmes d'apprentissage automatique avancés avec un pouvoir prédictif significatif.",
-    "process_title": "Processus standard hautement conçu pour les simulations de chimie quantique"
+    "description_1": "Les simulations chimiques sont chronophages et complexes à préparer. Notre objectif est de faciliter et d'accélérer le processus de conception. Nous utilisons l'IA pour entraîner des Hamiltoniens généraux pour les simulations chimiques, exécutables efficacement sur les plateformes HPC, les ordinateurs quantiques, ainsi que sur les simulations d'ordinateurs quantiques.",
+    "description_2": "L'entreprise propose également des services de conseil pour l'entraînement d'IA sur des jeux de données provenant de domaines tels que la chimie, la biologie, la science des matériaux et la cosmologie. Ces services sont supportés par des noyaux basés sur la physique (par exemple, des noyaux de mécanique quantique), permettant le développement d'algorithmes avancés d'apprentissage automatique avec un pouvoir prédictif significatif.",
+    "process_title": "Processus standard et hautement optimisé pour les simulations de chimie quantique"
   },
   "services": {
-    "title": "Nos services complémentaires",
-    "description": "En complément des services cloud, nous pouvons vous aider dans les domaines suivants",
+    "title": "Nos Services Complémentaires",
+    "description": "En plus des services cloud, nous pouvons vous accompagner dans les domaines suivants :",
     "service_1": {
       "title": "Conception d'algorithmes pour la dynamique moléculaire quantique",
       "description": "Développement d'algorithmes personnalisés optimisés pour vos besoins spécifiques en simulation moléculaire."
     },
     "service_2": {
-      "title": "Adapter votre application avec HPC/QC",
+      "title": "Adaptation de votre application via HPC/QC",
       "description": "Services d'intégration pour améliorer vos applications existantes avec des capacités de calcul haute performance et quantique."
     },
     "service_3": {
       "title": "Formation, conseil et transfert de connaissances",
-      "description": "Accompagnement et formation d'experts pour aider votre équipe à maîtriser les technologies et applications de l'informatique quantique."
+      "description": "Conseils d'experts et formation pour aider votre équipe à maîtriser les technologies et applications de l'informatique quantique."
     },
-    "explore_button": "Découvrir nos services"
+    "explore_button": "Découvrir nos Services"
   },
   "how_it_works": {
-    "title": "Comment ça marche ?",
+    "title": "Comment Ça Marche ?",
     "step_1": {
-      "title": "Choisissez votre environnement assisté par IA",
-      "description": "Vous pouvez choisir un environnement de type JupyterHub ou MolKet Studio. Utilisez le moteur de MolKet sur votre ordinateur dans Visual Studio ou programmez en ligne sur le web.",
-      "button": "SDK MolKet"
+      "title": "Choisissez votre environnement assisté par l'IA",
+      "description": "Vous pouvez choisir un environnement de type JupyterHub ou MolKet Studio. Utilisez le moteur de MolKet sur votre ordinateur avec Visual Studio ou programmez en ligne via le web.",
+      "button": "MolKet SDK"
     },
     "step_2": {
-      "title": "Tapez votre code ou concevez votre simulation par glisser-déposer",
-      "description": "Tapez votre code en langage naturel ou choisissez parmi notre bibliothèque. Notre assistant IA vous aidera à compléter l'écriture du code et suggérera des modules à utiliser. Vous pouvez également concevoir la simulation sous forme de diagramme de flux.",
-      "button_1": "Lancer la simulation",
+      "title": "Saisissez votre code ou glissez-déposez pour concevoir votre simulation",
+      "description": "Saisissez votre code en langage naturel ou choisissez-le dans notre bibliothèque. Notre assistant IA vous aidera à rédiger le code et suggérera les modules que vous pouvez utiliser. Alternativement, vous pouvez concevoir la simulation sous forme de diagramme de flux.",
+      "button_1": "Démarrer la Simulation",
       "button_2": "MolKet Studio"
     },
     "step_3": {
-      "title": "Le moteur IA de MolKet vous aide à sélectionner les algorithmes et les plateformes de calcul",
-      "description": "En fonction de la complexité computationnelle et du type de chaque étape de la simulation, le moteur IA de MolKet choisira l'architecture quantique/HPC appropriée pour vous. Il optimisera également l'exécution sur chaque type de matériel en entraînant les hamiltoniens généraux et en les mappant sur le quantique.",
-      "button": "SDK MolKet"
+      "title": "Le moteur IA de MolKet vous aidera à choisir les algorithmes et les plateformes de calcul",
+      "description": "En fonction de la complexité computationnelle et du type de chaque étape de la simulation, le moteur IA de MolKet sélectionnera l'architecture quantique/HPC appropriée. Il optimisera également l'exécution sur chaque type de matériel en entraînant les Hamiltoniens généraux et en les mappant sur l'architecture quantique.",
+      "button": "MolKet SDK"
     },
     "step_4": {
-      "title": "Obtenez les résultats et post-traitez avec les bibliothèques ML et IA intégrées",
+      "title": "Obtenez les résultats et effectuez le post-traitement à l'aide des bibliothèques ML et IA intégrées",
       "description": "En fonction de la complexité computationnelle et du type de chaque étape de la simulation, le moteur IA de MolKet choisira l'architecture quantique/HPC appropriée pour vous.",
-      "button": "Lancer la simulation"
+      "button": "Démarrer la Simulation"
     }
   },
   "featured_videos": {
-    "title": "Vidéos en vedette",
+    "title": "Vidéos Phares",
     "description": "Découvrez comment MolKet révolutionne l'informatique quantique",
     "video_1": {
-      "title": "Intelligence quantique pour les simulations chimiques",
-      "description": "MolKet exploite la puissance de l'intelligence quantique pour révolutionner les simulations en chimie et physique. Nos agents IA, entraînés sur des dérivations complexes de hamiltoniens, prédisent le comportement de systèmes complexes, accélérant considérablement la recherche et la découverte."
+      "title": "Intelligence Quantique pour les Simulations Chimiques",
+      "description": "MolKet exploite la puissance de l'intelligence quantique pour révolutionner les simulations en chimie et en physique. Nos agents IA, entraînés sur des dérivations Hamiltoniennes complexes, prédisent le comportement des systèmes complexes, accélérant considérablement la recherche et la découverte."
     },
     "video_2": {
-      "title": "Accélérer la conception chimique avec des agents IA",
-      "description": "Alain Chancé et Dr. Taha Selim proposent d'utiliser des agents IA pour accélérer la conception chimique et les simulations dynamiques quantiques. Ces agents IA peuvent être entraînés sur les entrées et sorties des algorithmes de chimie et de dynamique quantique, remplaçant efficacement les composants coûteux en calcul."
+      "title": "Accélérer la Conception Chimique avec les Agents IA",
+      "description": "Alain Chancé et le Dr Taha Selim proposent de tirer parti des agents IA pour accélérer la conception chimique et les simulations de dynamique quantique. Ces agents IA peuvent être entraînés sur les entrées et sorties d'algorithmes de chimie et de dynamique quantique, remplaçant ainsi efficacement les composants coûteux en calcul."
     }
   },
   "Our_Development_Model": {
-    "title": "Notre modèle de développement",
-    "subtitle": "Nous pouvons vous aider en vous fournissant ce dont vous avez besoin à partir de bibliothèques intégrées qui vous aident dans votre exécution."
+    "title": "Notre Modèle de Développement",
+    "subtitle": "Nous pouvons vous aider en vous fournissant les bibliothèques intégrées nécessaires à votre exécution."
   },
   "team": {
     "title": "Fondateurs de MolKet",
     "founder_1": {
       "name": "Dr. Taha Selim",
-      "role": "Directeur Général",
+      "role": "Directeur Général - General Manager",
       "credentials": {
-        "title": "Références",
-        "item_1": "Maître de conférences/Chercheur (Officier d'éducation QC), Université des Sciences Appliquées d'Amsterdam",
-        "item_2": "Membre fondateur MVP QSECDEF",
-        "item_3": "Doctorat en chimie théorique et computationnelle quantique",
-        "item_4": "Master en physique quantique, lasers et matériaux"
+        "title": "Qualifications",
+        "item_1": "Chargé de cours/Chercheur (Responsable de l'Éducation QC), Amsterdam University of Applied Sciences",
+        "item_2": "Membre Fondateur MVP QSECDEF",
+        "item_3": "Doctorat en Chimie Quantique Théorique & Computationnelle",
+        "item_4": "M.Sc. en Physique Quantique, Lasers et Matériaux"
       },
       "talks": {
-        "title": "Conférences récentes",
-        "item_1": "Co-orateur pour une présentation éclair sur la simulation de la dynamique moléculaire quantique avec Julia à JuliaCon 2024",
-        "item_2": "Orateur, Dioxyde de carbone (CO2) comme capteur moléculaire quantique dans les disques protoplanétaires, à la réunion de mars de l'APS 2024"
+        "title": "Conférences Récentes",
+        "item_1": "Co-conférencier lightning talk Simulating quantum molecular dynamics with Julia à JuliaCon 2024",
+        "item_2": "Conférencier, Carbon dioxide (CO2) as a quantum molecular sensor in protoplanetary disks, à APS March Meeting 2024",
+        "item_3": "Paneliste au panel QED-C Quantum & AI Use Cases (2025)"
       },
       "publications": {
-        "title": "Publications récentes",
-        "item_1": "Dioxyde de carbone (CO2) comme capteur moléculaire quantique dans les disques protoplanétaires, à la réunion de mars de l'APS 2024",
-        "item_2": "Taux de transition rovibrationnelle état par état pour le CO2 dans le mode de flexion en collision avec des atomes de He, J. Chem. Phys., 159, 164310 (2023)"
+        "title": "Publications Récentes",
+        "item_1": "Carbon dioxide (CO2) as a quantum molecular sensor in protoplanetary disks, à APS March Meeting 2024",
+        "item_2": "State-to-state rovibrational transition rates for CO2 in the bend mode in collisions with He atoms, J. Chem. Phys., 159, 164310 (2023)"
       },
       "linkedin": "Profil LinkedIn",
-      "view_profile": "Voir le profil complet"
+      "view_profile": "Voir le Profil Complet"
     },
     "founder_2": {
       "name": "Alain Chancé",
-      "role": "Président",
+      "role": "Président - President",
       "credentials": {
-        "title": "Références",
-        "item_1": "Consultant principal avec plus de 30 ans d'expérience dans de grandes firmes de conseil en gestion",
-        "item_2": "Membre fondateur MVP QSECDEF",
-        "item_3": "Membre senior IEEE",
-        "item_4": "Affilié à la Société Américaine de Chimie (ACS)",
-        "item_5": "Membre de la Société Américaine de Physique (APS)",
-        "item_6": "Avocat Qiskit et Développeur Associé Certifié IBM",
-        "item_7": "Diplôme de Master en Sciences et en Ingénierie Exécutive, MINES Saint-Étienne, France (1981)"
+        "title": "Qualifications",
+        "item_1": "Consultant principal avec plus de 30 ans d'expérience dans de grandes firmes de conseil en management",
+        "item_2": "Membre Fondateur MVP QSECDEF",
+        "item_3": "Membre Senior IEEE",
+        "item_4": "Affilié à l'American Chemical Society (ACS)",
+        "item_5": "Membre de l'American Physical Society (APS)",
+        "item_6": "Qiskit Advocate & IBM Certified Associate Developer",
+        "item_7": "Master en Sciences et Ingénierie Exécutive MINES Saint-Etienne, France (1981)"
       },
       "talks": {
-        "title": "Conférences récentes",
-        "item_1": "Co-orateur pour une présentation éclair sur la simulation de la dynamique moléculaire quantique avec Julia à JuliaCon 2024",
-        "item_2": "Co-orateur principal \"Combiner la puissance de l'IA avec le quantique\" au Festival Mondial de l'Intelligence Artificielle de Cannes (WAICF), Cannes, France, 9 février 2024"
+        "title": "Conférences Récentes",
+        "item_1": "Co-conférencier lightning talk Simulating quantum molecular dynamics with Julia à JuliaCon 2024",
+        "item_2": "Co-conférencier principal \"Combining the power of AI with Quantum\" au World Artificial Intelligence Cannes Festival (WAICF), Cannes, France, 9 février 2024",
+        "item_3": "Paneliste au panel QED-C Quantum & AI Use Cases (2025)"
       },
       "publications": {
-        "title": "Publications récentes",
-        "item_1": "QPP-Alain, dépôt de l'article de conférence Quantum Permutation Pad avec Qiskit Runtime",
-        "item_2": "Quantum Permutation Pad Corinthians, In: Femmam, S., Lorenz, P. (eds) Avancées récentes dans les réseaux de communication et les systèmes embarqués",
+        "title": "Publications Récentes",
+        "item_1": "QPP-Alain, dépôt du papier de conférence Quantum Permutation Pad with Qiskit Runtime",
+        "item_2": "Quantum Permutation Pad Corinthians, In: Femmam, S., Lorenz, P. (eds) Recent Advances in Communication Networks and Embedded Systems",
         "item_3": "Quantum Chemistry and Computing for the Curious: Illustrated with Python and Qiskit® code, Keeper L. Sharkey, Alain Chancé, Packt (2022)"
       },
       "linkedin": "Profil LinkedIn",
-      "view_profile": "Voir le profil complet"
+      "view_profile": "Voir le Profil Complet"
     }
   },
   "contact": {
-    "title": "Nous contacter",
-    "description": "Entrez en contact avec notre équipe",
+    "title": "Nous Contacter",
+    "description": "Prenez contact avec notre équipe",
     "location": {
-      "title": "Notre emplacement",
+      "title": "Notre Emplacement",
       "address": "MOLKET SAS, 38, rue des Mathurins, 75008, Paris, France"
     },
     "email": {
-      "title": "Envoyez-nous un e-mail",
+      "title": "Écrivez-nous",
       "contact_email": "contact@molket.io",
       "business_email": "business@molket.io"
     },
@@ -160,21 +162,21 @@
       "title": "Appelez-nous",
       "number": "+33 1 42 65 28 27"
     },
-    "request_demo": "Demander une démo"
+    "request_demo": "Demander une Démonstration"
   },
   "footer": {
-    "description": "MolKet propose des services de conseil et d'IA pour modéliser des solutions moléculaires quantiques avec des logiciels basés sur le cloud sur des plateformes de calcul hybride HPC et quantique.",
+    "description": "MolKet offre des services de conseil et d'IA pour la modélisation de solutions moléculaires quantiques avec des logiciels basés sur le cloud, sur des plateformes hybrides HPC et de calcul quantique.",
     "quick_links": {
-      "title": "Liens rapides",
-      "about": "À propos de nous",
+      "title": "Liens Rapides",
+      "about": "À Propos de Nous",
       "services": "Services",
-      "how_it_works": "Comment ça marche",
-      "team": "Notre équipe",
+      "how_it_works": "Fonctionnement",
+      "team": "Notre Équipe",
       "contact": "Contact"
     },
     "resources": {
       "title": "Ressources",
-      "use_cases": "Cas d'utilisation",
+      "use_cases": "Cas d'Utilisation",
       "lab": "Laboratoire",
       "molket_jl": "MolKet.jl",
       "legal_mentions": "Mentions légales"
