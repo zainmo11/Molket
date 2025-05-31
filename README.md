@@ -135,7 +135,6 @@ Deploy the application to a static hosting service like Vercel, Netlify, or GitH
 For inquiries, reach out to:
 
 - **Email**: [contact@molket.io](mailto:contact@molket.io), [business@molket.io](mailto:business@molket.io)
-- **Phone**: +33 1 42 65 28 27
 - **Location**: MOLKET SAS, 38, rue des Mathurins, 75008, Paris, France
 
 Visit [molket.io](https://www.molket.io) for more information.
