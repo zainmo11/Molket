@@ -72,3 +72,20 @@ html, body {
 span.token.operator {
   background: none !important;
 }
+
+.navbar {
+  display: flex;
+  align-items: center; /* Vertically centers items */
+  height: 60px; /* or whatever your navbar height is */
+  background-color: #1a237e; /* example background */
+  padding: 0 20px;
+}
+
+.navbar a {
+  color: white;
+  padding: 0 15px;
+  text-decoration: none;
+  display: flex;
+  align-items: center;  /* Also center link content */
+  height: 100%;
+}
