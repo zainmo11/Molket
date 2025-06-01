@@ -141,11 +141,31 @@ const ChatBot = () => {
         const message = userMessage.toLowerCase();
 
 
-        // greetings
-        const greetings = ["hi", "hello", "hey", "good morning", "good afternoon"];
-        if (greetings.some((g) => message.includes(g))) {
-            return "Hello! How can I help you with MolKet's services, team, or contact info?";
+        // greetings or part from it
+        const isGreetingMessage = (message: string): string | null => {
+            const greetings = ["hi", "hello", "hey", "good morning", "good afternoon"];
+            if (greetings.some((g) => message.toLowerCase().includes(g))) {
+                return "Hello! How can I help you with MolKet's services, team, or contact info?";
+            }
+            return null;
+        };
+        const greetingResponse = isGreetingMessage(message);
+        if (greetingResponse) {
+            return greetingResponse;
         }
+        // goodbye
+        const isGoodbyeMessage = (message: string): string | null => {
+            const goodbyes = ["bye", "goodbye", "see you later", "see you soon", "see ya"];
+            if (goodbyes.some((g) => message.toLowerCase().includes(g))) {
+                return "Goodbye! See you soon!";
+            }
+            return null;
+        };
+        const goodbyeResponse = isGoodbyeMessage(message);
+        if (goodbyeResponse) {
+            return goodbyeResponse;
+        }
+
         // Flatten keys and map them to answers with category context
         const allQA: { keyword: string; answer: string; }[] = [];
 
