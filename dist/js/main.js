@@ -20,7 +20,7 @@
       logo.src = "logo_circle-removebg-preview.png";
     }
 
-    // show or hide the back-top-top button
+    // show or hide the back-top-top button.tsx
     const backToTop = document.querySelector(".back-to-top");
     if (
       document.body.scrollTop > 50 ||

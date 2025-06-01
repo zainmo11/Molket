@@ -9,7 +9,7 @@ import Team from './components/Team';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
 import Model from './components/Model'
-
+import ChatBot from "./components/Chatbot.tsx";
 function App() {
     const [showBackToTop, setShowBackToTop] = useState(false);
 
@@ -35,9 +35,9 @@ function App() {
             }
         };
 
-        // Show/hide back to top button based on scroll position
+        // Show/hide back to top button.tsx based on scroll position
         const handleScroll = () => {
-            // Show the button only if the user has scrolled down more than 200px (adjust as needed)
+            // Show the button.tsx only if the user has scrolled down more than 200px (adjust as needed)
             if (window.scrollY > 200) {
                 setShowBackToTop(true);
             } else {
@@ -66,18 +66,19 @@ function App() {
             <Team />
             <Contact />
             <Footer />
+            <ChatBot />
 
-            {/* Back to top button - conditionally rendered */}
-            {showBackToTop && (
-                <a
-                    href="#home"
-                    className="fixed bottom-8 right-8 bg-blue-600 text-white p-3 rounded-full shadow-lg hover:bg-blue-700 transition-colors duration-300 z-50"
-                >
-                    <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 10l7-7m0 0l7 7m-7-7v18" />
-                    </svg>
-                </a>
-            )}
+            {/*/!* Back to top button.tsx - conditionally rendered *!/*/}
+            {/*{showBackToTop && (*/}
+            {/*    <a*/}
+            {/*        href="#home"*/}
+            {/*        className="fixed bottom-8 right-8 bg-blue-600 text-white p-3 rounded-full shadow-lg hover:bg-blue-700 transition-colors duration-300 z-50"*/}
+            {/*    >*/}
+            {/*        <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">*/}
+            {/*            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 10l7-7m0 0l7 7m-7-7v18" />*/}
+            {/*        </svg>*/}
+            {/*    </a>*/}
+            {/*)}*/}
         </div>
     );
 }
