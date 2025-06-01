@@ -22,7 +22,7 @@ molecule = me.Molecule('H_2')
 # define the geometry of the molecule: example H2
 molecule.geometry = [('H', (0, 0, 0)), ('H', (0, 0, 0.74))]`,
       isLeft: true,
-      button1: t('how_it_works.step_1.button.tsx') || 'MolKet SDK'
+      button1: 'MolKet SDK'
     },
     {
       title: t('how_it_works.step_2.title'),
@@ -35,8 +35,8 @@ H_op.elec_basis = 'sto-3g'
 # define the nuclear motion basis set, the vibrational basis set
 H_op.nuc_basis = ('harmonic','Gaussian')`,
       isLeft: false,
-      button1: t('how_it_works.step_2.button_1') || 'Start Simulation',
-      button2: t('how_it_works.step_2.button_2') || 'MolKet Studio'
+      button1:  'Start Simulation',
+      button2:  'MolKet Studio'
     },
     {
       title: t('how_it_works.step_3.title'),
@@ -56,7 +56,7 @@ H_op.Qchip = 'Qqx2'
 ## accelerated computing with GPU
 H_op.HPCchip = 'GPU'`,
       isLeft: true,
-      button1: t('how_it_works.step_3.button.tsx') || 'MolKet SDK'
+      button1: 'MolKet SDK'
     },
     {
       title: t('how_it_works.step_4.title'),
@@ -70,7 +70,7 @@ vib_WF0 = H_op.vib_eigW('0','groundstate')
 
 #H = H_vib + H_rot + H_elec + H_nuc`,
       isLeft: false,
-      button1: t('how_it_works.step_4.button.tsx') || 'Start Simulation'
+      button1: 'Start Simulation'
     }
   ];
 
