@@ -32,14 +32,21 @@ const ChatBot = () => {
     const messagesEndRef = useRef<HTMLDivElement>(null);
 
     const suggestedQuestions: SuggestedQuestion[] = [
-        {id: "1", text: "What is quantum molecular dynamics?", category: "services"},
+        {id: "1", text: "What is Molket?", category: "molket"},
         {id: "2", text: "Tell me about MolKet.jl", category: "resources"},
         {id: "3", text: "Who are the founders?", category: "team"},
         {id: "4", text: "How can I request a demo?", category: "demo"},
         {id: "5", text: "What services do you offer?", category: "services"},
         {id: "6", text: "Contact information", category: "contact"},
-        {id: "7", text: "What is neuromorphic computing?", category: "technology"},
-        {id: "8", text: "Tell me about your AI solutions", category: "ai"}
+        {id: "7", text: "Where is MolKet located?", category: "location"},
+        {id: "8", text: "Who works at molket", category: "who works at molket"},
+        {id: "9", text: "How to reach MolKet", category: "how to reach molket"},
+        {id: "10", text: "What is MolKet's company?", category: "molket company"},
+        {id: "11", text: "Who is Dr. Taha?", category: "taha"},
+        {id: "12", text: "Who is Dr. alain ?", category: "alain"},
+        { id: "13", text: "How does MolKet contribute to cryptography?", category: "cryptography" },
+        { id: "14", text: "How does MolKet use AI?", category: "ai" },
+        { id: "15", text: "What publications or talks has MolKet contributed to?", category: "talks" }
     ];
 
     const scrollToBottom = () => {
@@ -63,13 +70,18 @@ const ChatBot = () => {
                 "services": "Our services include quantum molecular dynamics, cryptography, and neuromorphic computing.",
                 "how it works": "MolKet offers an AI-assisted environment for designing and running quantum simulations step-by-step.",
                 "team": "Our founders include Dr. Taha Selim and Alain Chancé, experts in quantum computing and consulting.",
-                "contact": "You can contact us at contact@molket.io",
+                "contact": "You can contact us at contact@molket.io or business@molket.io for inquiries.",
                 "resources": "Resources include Use Cases, Lab, and MolKet.jl library.",
                 "use cases": "MolKet's use cases include molecular simulations, quantum cryptography, and neuromorphic AI applications.",
                 "lab": "Our lab develops innovative quantum computing algorithms and open-source tools.",
-                "molket": "MolKet is a company specialized in quantum molecular dynamics and AI-powered simulations.",
+                "molket": "MolKet is a company specialized in quantum molecular dynamics and AI-powered simulations. MolKet offers management consulting and AI services for:\n" +
+                    "\n" +
+                    "Quantum molecular dynamics\n" +
+                    "Cryptography\n" +
+                    "Neuromorphic-based computing\n" +
+                    "Supported by cloud-based hybrid HPC & quantum computing platforms, enabling the development of advanced machine learning algorithms with significant predictive power.\n",
                 "molket.io": "Visit our website at https://molket.io for more information.",
-                "molket.jl": "MolKet.jl is our open-source Julia library for quantum simulations."
+                "molket.jl": "MolKet.jl is our open-source Julia library for quantum simulations. Visit https://github.com/MolKet/MolKet.jl for more information."
             }
         },
         home: {
@@ -120,12 +132,14 @@ const ChatBot = () => {
         },
         team: {
             keys: [
-                "taha selim", "alain chancé", "founders", "credentials",
+                "taha","selim", "alain","chance", "founders", "credentials",
                 "talks", "publications", "molket team", "who works at molket"
             ],
             answers: {
-                "taha selim": "Dr. Taha Selim is our General Manager with a PhD in Quantum Theoretical & Computational Chemistry.",
-                "alain chancé": "Alain Chancé is our President with 30+ years of experience in management consulting and quantum computing.",
+                "taha": "Dr. Taha Selim is our General Manager with a PhD in Quantum Theoretical & Computational Chemistry.",
+                "selim": "Dr. Taha Selim is our General Manager with a PhD in Quantum Theoretical & Computational Chemistry.",
+                "alain": "Alain Chancé is our President with 30+ years of experience in management consulting and quantum computing.",
+                "Chance": "Alain Chancé is our President with 30+ years of experience in management consulting and quantum computing.",
                 "founders": "Our founders are Dr. Taha Selim and Alain Chancé, both experts in quantum computing and business.",
                 "credentials": "Our team holds PhDs and extensive experience in quantum physics, chemistry, and AI development.",
                 "talks": "Our founders regularly speak at top conferences like JuliaCon and APS March Meeting.",
@@ -380,16 +394,19 @@ const ChatBot = () => {
                                 <div className="space-y-3 animate-fade-in">
                                     <p className="text-xs text-gray-500 text-center">Try asking about:</p>
                                     <div className="flex flex-wrap gap-2 justify-center">
-                                        {suggestedQuestions.slice(0, 6).map((suggestion, idx) => (
-                                            <button
-                                                key={suggestion.id}
-                                                onClick={() => handleSuggestedQuestion(suggestion.text)}
-                                                className="text-xs bg-gradient-to-r from-blue-50 to-purple-50 hover:from-blue-100 hover:to-purple-100 text-blue-700 px-3 py-2 rounded-full border border-blue-200 transition-transform duration-300 hover:scale-105 active:scale-95"
-                                                style={{ animationDelay: `${idx * 0.05}s` }}
-                                            >
-                                                {suggestion.text}
-                                            </button>
-                                        ))}
+                                        {[...suggestedQuestions]
+                                            .sort(() => 0.5 - Math.random())
+                                            .slice(0, 6)
+                                            .map((suggestion, idx) => (
+                                                <button
+                                                    key={suggestion.id}
+                                                    onClick={() => handleSuggestedQuestion(suggestion.text)}
+                                                    className="text-xs bg-gradient-to-r from-blue-50 to-purple-50 hover:from-blue-100 hover:to-purple-100 text-blue-700 px-3 py-2 rounded-full border border-blue-200 transition-transform duration-300 hover:scale-105 active:scale-95"
+                                                    style={{ animationDelay: `${idx * 0.05}s` }}
+                                                >
+                                                    {suggestion.text}
+                                                </button>
+                                            ))}
                                     </div>
                                 </div>
                             )}
