@@ -11,7 +11,7 @@ i18n
     .use(initReactI18next)
     .init({
         fallbackLng: 'en',
-        debug: true, // shows useful logs in console
+        debug: False,
         resources: {
             en: { translation: translationEN },
             fr: { translation: translationFR },
